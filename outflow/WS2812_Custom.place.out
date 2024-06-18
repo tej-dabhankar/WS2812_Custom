@@ -1,0 +1,295 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Compiled: Dec 15 2023.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T120F324" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.dbg.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.0734379 seconds.
+	VDB Netlist Checker took 0.07 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 199.972 MB, end = 199.972 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 53.908 MB, end = 54.036 MB, delta = 0.128 MB
+	VDB Netlist Checker peak resident set memory usage = 1818.58 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.interface.csv'.
+Successfully processed interface constraints file "/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #6(jtag_inst1_DRCK) has no fanout.
+Removing input.
+logical_block #8(jtag_inst1_RUNTEST) has no fanout.
+Removing input.
+logical_block #13(jtag_inst1_TMS) has no fanout.
+Removing input.
+Pass 0: Swept away 3 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 3 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 3 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.dbg.vdb".
+Netlist pre-processing took 0.173646 seconds.
+	Netlist pre-processing took 0.16 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 199.972 MB, end = 211.64 MB, delta = 11.668 MB
+Netlist pre-processing resident set memory usage: begin = 53.396 MB, end = 65.812 MB, delta = 12.416 MB
+	Netlist pre-processing peak resident set memory usage = 1818.58 MB
+***** Ending stage netlist pre-processing *****
+
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+Generate proto netlist for file "/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/work_pnr/WS2812_Custom.net_proto" took 0.007713 seconds
+Creating IO constraints file '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/work_pnr/WS2812_Custom.io_place'
+Packing took 0.0301434 seconds.
+	Packing took 0.03 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 214.348 MB, end = 220.104 MB, delta = 5.756 MB
+Packing resident set memory usage: begin = 68.628 MB, end = 74.544 MB, delta = 5.916 MB
+	Packing peak resident set memory usage = 1818.58 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file /home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/work_pnr/WS2812_Custom.net_proto
+Read proto netlist for file "/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/work_pnr/WS2812_Custom.net_proto" took 0.001522 seconds
+Setup net and block data structure took 0.163702 seconds
+Packed netlist loading took 1.57106 seconds.
+	Packed netlist loading took 1.93 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 220.104 MB, end = 712.144 MB, delta = 492.04 MB
+Packed netlist loading resident set memory usage: begin = 74.544 MB, end = 152.78 MB, delta = 78.236 MB
+	Packed netlist loading peak resident set memory usage = 1818.58 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+WARNING(1): No ports matched 'Clk'
+WARNING(2): [SDC /home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/constraint.sdc:1] No valid object(s) found for ''
+WARNING(3): [SDC /home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/constraint.sdc:1] No valid pin(s) found for clock
+WARNING(4): [SDC /home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/constraint.sdc:1] Unable to run 'create_clock' constraint due to warnings found
+
+SDC file '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/constraint.sdc' blank or does not contain valid constraint or not found.
+Using default timing constraint of 1 ns.
+
+SDC file '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/constraint.sdc' parsed successfully.
+3 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.interface.csv'.
+Successfully processed interface constraints file "/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.interface.csv".
+Writing IO placement constraints to '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.interface.io'.
+
+Reading placement constraints from '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.interface.io'.
+
+Reading placement constraints from '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/work_pnr/WS2812_Custom.io_place'.
+WARNING(5): i_rx_serial_config has no assigned placement; it will be placed randomly.
+WARNING(6): i_rx_serial_data has no assigned placement; it will be placed randomly.
+WARNING(7): data has no assigned placement; it will be placed randomly.
+3 IOs will have random placement.
+WARNING(8): Clock driver clk should use the dedicated clock pad.
+WARNING(9): Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+The driver, jtag_inst1_RESET, of control net, jtag_inst1_RESET, should be placed at a dedicated control pad location.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Found 44 synchronizers as follows: 
+	Synchronizer 0:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF
+	Synchronizer 1:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF
+	Synchronizer 2:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF
+	Synchronizer 3:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF
+	Synchronizer 4:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF
+	Synchronizer 5:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF
+	Synchronizer 6:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF
+	Synchronizer 7:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF
+	Synchronizer 8:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF
+	Synchronizer 9:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[2]~FF
+	Synchronizer 10:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF
+	Synchronizer 11:  ws_wr_fifo_config/u_efx_fifo_top/genblk2.rd_rst[0]~FF ws_wr_fifo_config/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 12:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF
+	Synchronizer 13:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF
+	Synchronizer 14:  ws_wr_fifo_config/u_efx_fifo_top/genblk2.wr_rst[0]~FF ws_wr_fifo_config/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 15:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[7]~FF
+	Synchronizer 16:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF
+	Synchronizer 17:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF
+	Synchronizer 18:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[0]~FF
+	Synchronizer 19:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF
+	Synchronizer 20:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[1]~FF
+	Synchronizer 21:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[8]~FF
+	Synchronizer 22:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF
+	Synchronizer 23:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[9]~FF
+	Synchronizer 24:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF
+	Synchronizer 25:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[7]~FF
+	Synchronizer 26:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[8]~FF
+	Synchronizer 27:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[9]~FF
+	Synchronizer 28:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF
+	Synchronizer 29:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[7]~FF
+	Synchronizer 30:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[8]~FF
+	Synchronizer 31:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[9]~FF
+	Synchronizer 32:  ws_wr_fifo_data/u_efx_fifo_top/genblk2.rd_rst[0]~FF ws_wr_fifo_data/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 33:  ws_wr_fifo_data/u_efx_fifo_top/genblk2.wr_rst[0]~FF ws_wr_fifo_data/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 34:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[0]~FF
+	Synchronizer 35:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[1]~FF
+	Synchronizer 36:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[2]~FF
+	Synchronizer 37:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF
+	Synchronizer 38:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF
+	Synchronizer 39:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF
+	Synchronizer 40:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF
+	Synchronizer 41:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[7]~FF
+	Synchronizer 42:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[8]~FF
+	Synchronizer 43:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[9]~FF
+Create /home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom_after_qp.qdelay
+QPLACER STATIC DB USAGE DISABLED
+Starting Global Placer with 6 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1     9529594           -5244         1.3%
+          2     9493958           -5309         2.2%
+          3     7967284           -5244         2.6%
+          4     7434601           -5244         3.0%
+          5     2664066           -5580         4.4%
+          6     1080458           -6569        10.0%
+          7      429838           -7850        20.7%
+          8      311402           -8233        33.2%
+          9      276665           -9603        42.4%
+         10      246766           -9877        45.0%
+         11      240765           -9623        50.2%
+         12      239916           -9062        51.0%
+         13      250367           -8922        52.8%
+         14      239187           -9191        52.8%
+         15      258527           -8631        54.5%
+         16      232448           -8919        55.2%
+         17      248047           -9120        57.0%
+         18      239720           -8729        57.0%
+         19      249427           -8919        57.0%
+         20      230114           -8928        57.8%
+         21      244963           -8654        60.4%
+         22      225635           -9126        60.4%
+         23      241736           -8902        62.8%
+         24      226534           -9361        62.8%
+         25      233271           -8924        64.2%
+         26      217540           -8976        64.2%
+         27      229479           -9157        65.6%
+         28      211904           -9151        65.6%
+         29      232831           -9147        66.0%
+         30      215325           -9258        66.0%
+         31      232614           -9127        68.1%
+         32      214185           -9491        68.1%
+         33      228351           -9697        69.9%
+         34      210099          -10136        69.9%
+         35      230330           -9932        69.9%
+         36      211519           -9689        69.9%
+         37      222017           -9904        70.5%
+         38      214120          -10170        70.5%
+         39      223872          -10254        71.1%
+         40      215008           -9862        71.1%
+         41      222366           -9813        72.7%
+         42      213348          -10268        72.7%
+         43      220626           -9953        73.9%
+         44      206504          -10055        74.3%
+         45      216665          -10163        78.6%
+         46      201320          -10502        78.6%
+         47      209033           -9966        80.2%
+         48      200668          -10227        80.2%
+         49      209596           -9997        80.8%
+         50      198480           -9988        80.8%
+         51      207516          -10189        82.9%
+         52      197679          -10201        82.9%
+         53      209215           -9994        83.5%
+         54      194249          -10200        83.5%
+         55      209199           -9956        85.7%
+         56      199200           -9962        85.7%
+         57      209193           -9511        85.7%
+         58      198938          -10192        85.7%
+         59      209015          -10440        87.0%
+         60      197466          -10204        87.0%
+         61      206701          -10340        88.8%
+         62      195190          -10656        88.8%
+         63      202869          -10170        89.6%
+         64      194289          -10386        89.6%
+         65      203910          -10318        90.5%
+         66      191135          -10295        90.5%
+         67      200771          -10301        90.6%
+         68      190375          -10212        90.6%
+         69      198954          -10142        91.2%
+         70      191232          -10391        91.2%
+         71      197982          -10301        91.9%
+         72      191447          -10391        91.9%
+         73      198431           -9926        92.3%
+         74      191090          -10051        92.3%
+         75      195599          -10366        92.7%
+         76      188459          -10048        92.7%
+         77      193387          -10041        93.6%
+         78      191311          -10389        93.6%
+         79      194538          -10004        94.1%
+         80      187475          -10153        94.1%
+         81      190809          -10145        95.0%
+         82      194089          -10405        95.0%
+         83      189513          -10133        95.0%
+         84      191416          -10392        95.3%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0      188459           10555        30.0
+          1      186389            9280        29.3
+          2      165430            8758        28.1
+          3      153755            8204        26.6
+          4      145325            8275        25.2
+          5      142404            8124        23.6
+          6      139415            7670        22.2
+          7      136535            7668        20.8
+          8      133483            7668        19.5
+          9      130578            7668        18.2
+         10      129133            7668        17.0
+         11      127436            7668        15.8
+         12      126165            7668        14.7
+         13      124884            7668        13.6
+         14      123986            7653        12.6
+         15      122764            7653        11.7
+         16      121737            7688        10.8
+         17      120691            7568        10.0
+         18      119276            7568         9.3
+         19      118762            7568         8.6
+         20      117783            7568         7.9
+         21      116428            7568         7.3
+         22      115313            7607         6.8
+         23      114586            7607         6.3
+         24      113607            7430         5.8
+         25      113169            7430         5.4
+         26      112646            7430         5.0
+         27      111871            7430         4.6
+         28      111056            7430         4.2
+         29      110084            7430         3.9
+         30      109293            7430         3.6
+         31      108773            7430         3.3
+         32      107372            7430         2.9
+Generate /home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom_after_qp.qdelay
+Placement successful: 5696 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.253629 at 13,0
+Congestion-weighted HPWL per net: 13.1648
+
+Reading placement constraints from '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.qplace'.
+Finished Realigning Types (1000 blocks needed type change)
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file '/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.place'
+Placement took 12.4239 seconds.
+	Placement took 25.6 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 732.684 MB, end = 1741.67 MB, delta = 1008.98 MB
+Placement resident set memory usage: begin = 173.9 MB, end = 738.344 MB, delta = 564.444 MB
+	Placement peak resident set memory usage = 1818.58 MB
+***** Ending stage placement *****
+

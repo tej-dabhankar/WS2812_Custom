@@ -1,0 +1,69 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Date: Tue Jun 18 16:11:32 2024
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T120F324
+Top-level Entity Name: WS2812_Custom
+
+---------- Resource Summary (begin) ----------
+Inputs: 10 / 1076 (0.93%)
+Outputs: 3 / 1566 (0.19%)
+Clocks: 2 / 16 (12.50%)
+Logic Elements: 5661 / 112128 (5.05%)
+	LE: LUTs/Adders: 3609 / 112128 (3.22%)
+	LE: Registers: 3427 / 107520 (3.19%)
+Memory Blocks: 35 / 1056 (3.31%)
+Multipliers: 0 / 320 (0.00%)
+---------- Resource Summary (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++---------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                         NAME                                          | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++---------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                   ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ram/ram                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                                 ws_bram/led_reg__D$2                                  | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ram/ram                   | SDP  |     8      |      8      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$12  | SDP  |     5      |      5      | READ_FIRST |   false    |
+|  edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$2  | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$b12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$c12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$d12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$e12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$f12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$g12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$h12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$i12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$j12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$k12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$l12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$m12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$n12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$o12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$p12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$q12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$r12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$s12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$t12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$u12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$v12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$w12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$x12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$y12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$z12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$A12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$B12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$C12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$D12 | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$E1  | SDP  |     5      |      5      | READ_FIRST |   false    |
++---------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+Elapsed time for routing: 0 hours 0 minutes 14 seconds
+Elapsed time for entire flow: 0 hours 0 minutes 37 seconds

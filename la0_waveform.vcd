@@ -1,0 +1,118 @@
+#0 $dumpon
+$date today $end
+$timescale 1 ns $end
+$scope module top $end
+$var wire 1 0 wsctrl/write $end
+$var wire 4 1 wsctrl/state $end
+$var wire 1 2 wsctrl/r_write $end
+$var wire 16 3 wsctrl/r_num_leds $end
+$var wire 1 4 wsctrl/r_fifo_read_en $end
+$var wire 16 5 wsctrl/r_data_shift $end
+$var wire 16 6 wsctrl/r_data_length $end
+$var wire 20 7 wsctrl/r_data_depth $end
+$var wire 16 8 wsctrl/r_data_delay $end
+$var wire 8 9 wsctrl/r_data_config $end
+$var wire 1 a wsctrl/reset $end
+$var wire 4 b wsctrl/post_wait_state $end
+$var wire 1 c wsctrl/num_leds_flag $end
+$var wire 16 d wsctrl/num_leds $end
+$var wire 1 e wsctrl/f_empty $end
+$var wire 1 f wsctrl/fifo_read_en $end
+$var wire 8 10 wsctrl/fifo_read_data $end
+$var wire 1 11 wsctrl/data_shift_flag $end
+$var wire 1 12 wsctrl/data_length_flag $end
+$var wire 16 13 wsctrl/data_length $end
+$var wire 20 14 wsctrl/data_depth $end
+$var wire 1 15 wsctrl/data_delay_flag $end
+$var wire 16 16 wsctrl/data_delay $end
+$var wire 1 17 wsctrl/clk $end
+$var wire 8 18 w_rx_byte $end
+$var wire 1 19 w_rx_dv $end
+$var wire 8 1a w_fifo_rd_data $end
+$var wire 16 1b data_delay $end
+$var wire 16 1c data_length $end
+$var wire 1 1d write $end
+$var wire 16 1e num_leds $end
+$var wire 1 1f w_f_empty $end
+$var wire 20 20 data_depth $end
+$var wire 1 21 i_rx_serial $end
+$var wire 1 22 w_fifo_rd_en $end
+$var wire 1 23 clk $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+00
+b0001 1
+02
+b1111111100000000 3
+04
+b0000000000000000 5
+b0000000000000000 6
+b00000000000000000000 7
+b0000000000000000 8
+b00000100 9
+0a
+b0111 b
+1c
+b1111111100000000 d
+1e
+0f
+b11111111 10
+111
+112
+b0000000000000000 13
+b00000000000000000000 14
+015
+b0000000000000000 16
+117
+b00000000 18
+019
+b11111111 1a
+b0000000000000000 1b
+b0000000000000000 1c
+01d
+b1111111100000000 1e
+11f
+b00000000000000000000 20
+121
+022
+123
+$end
+#1023
+00
+b0001 1
+02
+b1111111100000000 3
+04
+b0000000000000000 5
+b0000000000000000 6
+b00000000000000000000 7
+b0000000000000000 8
+b00000100 9
+0a
+b0111 b
+1c
+b1111111100000000 d
+1e
+0f
+b11111111 10
+111
+112
+b0000000000000000 13
+b00000000000000000000 14
+015
+b0000000000000000 16
+117
+b00000000 18
+019
+b11111111 1a
+b0000000000000000 1b
+b0000000000000000 1c
+01d
+b1111111100000000 1e
+11f
+b00000000000000000000 20
+121
+022
+123
