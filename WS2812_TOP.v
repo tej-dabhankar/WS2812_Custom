@@ -30,17 +30,20 @@ wire                        w_fifo_rd_en_data;
 wire [PHY_FIFO_WIDTH-1:0]   w_fifo_rd_data_data;
 
 wire                        w_write_config;
-wire [15:0]                 w_data_count;
 wire [15:0]                 w_data_depth;
 wire [15:0]                 w_num_leds;
 wire [15:0]                 w_data_length;
+wire [15:0]                 w_data_delay;
 
 wire                        w_write_data;
 wire [23:0]                 w_rgb_data;
-wire                        w_address;
+wire [15:0]                  w_address;
 
 wire [23:0]                 w_rgb_data_out;
 wire                        w_data_dv;
+wire                        w_read_en;
+wire [15:0]                 w_data_count;
+
 
 /* Module Instantiations */
 test_uart_rx #(
@@ -87,8 +90,10 @@ bram ws_bram (
     .write_address  (w_address),
     .rgb_data_in    (w_rgb_data),
     .read_address   (w_data_count),
-    .read_en        (w_data_dv),        // Corrected from w_read_en to w_data_dv
-    .rgb_data_out   (w_rgb_data_out)
+    .read_en        (w_read_en),        // Corrected from w_read_en to w_data_dv
+    .rgb_data_out   (w_rgb_data_out),
+    .data_dv         (w_data_dv),
+    .reset           (w_write_config)
 );
 
 WS2812_config_ctrl wsctrl (
@@ -99,7 +104,8 @@ WS2812_config_ctrl wsctrl (
     .data_depth     (w_data_depth),
     .write          (w_write_config),
     .num_leds       (w_num_leds),
-    .data_length    (w_data_length)
+    .data_length    (w_data_length),
+    .data_delay     (w_data_delay)
 );
 
 ws2812_data_ctrl data_ctrl (
@@ -107,7 +113,7 @@ ws2812_data_ctrl data_ctrl (
     .f_empty        (w_f_empty_data),
     .fifo_read_data (w_fifo_rd_data_data),
     .fifo_read_en   (w_fifo_rd_en_data),
-    .data_depth     (w_data_depth),
+    .num_leds       (w_num_leds),
     .write_config   (w_write_config),
     .write          (w_write_data),
     .rgb_data       (w_rgb_data),
@@ -119,10 +125,11 @@ WS2812_Interface WS2812_Interface (
     .rgb_data_in     (w_rgb_data_out),
     .data_depth      (w_data_depth),
     .num_leds        (w_num_leds),
+    .data_delay      (w_data_delay),
     .data_dv         (w_data_dv),
     .write_config    (w_write_config),
     .data_count      (w_data_count),
-    .read_en         (w_data_dv),    // Corrected from w_read_en to w_data_dv
+    .read_en         (w_read_en),    // Corrected from w_read_en to w_data_dv
     .data            (data)
 );
 

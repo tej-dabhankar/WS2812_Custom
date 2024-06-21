@@ -9,7 +9,7 @@ module WS2812_config_ctrl(
     input                           reset,
   
     /* WS2812 Signals */
-    output [19:0]                   data_depth,
+    output [15:0]                   data_depth,
     output                          write,
     output [15:0]                   data_delay,
     output [15:0]                   num_leds,
@@ -42,7 +42,7 @@ reg [15:0]  r_num_leds = 0;
 reg [15:0]  r_data_shift= 0;
 reg [15:0]  r_data_length = 0;
 
-reg [19:0]  r_data_depth = 0;
+reg [15:0]  r_data_depth = 0;
 reg         r_write = 0;
 
 

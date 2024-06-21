@@ -3,7 +3,7 @@
         {
             "name": "la0",
             "type": "la",
-            "uuid": "4320cdf61d704edbb8c73e43fb7cae9c",
+            "uuid": "9da89e11637c4080b15f75559e91a89d",
             "trigin_en": false,
             "trigout_en": false,
             "auto_inserted": true,
@@ -12,127 +12,157 @@
             "input_pipeline": 1,
             "probes": [
                 {
-                    "name": "w_rgb_data_out",
+                    "name": "wsctrl/state",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "wsctrl/r_data_delay",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "wsctrl/r_data_config",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "wsctrl/reset",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "wsctrl/data_delay",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "data_ctrl/state",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "data_ctrl/num_leds",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "data_ctrl/r_data_depth",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/r_num_leds",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/data",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/high_count",
+                    "width": 11,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/data_dv",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/data_count",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/reset_count",
+                    "width": 32,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/led_counter",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/r_read_en",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/rgb_data_in",
                     "width": 24,
                     "probe_type": 1
                 },
                 {
-                    "name": "i_rx_serial_config",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_data_count",
+                    "name": "WS2812_Interface/num_leds",
                     "width": 16,
                     "probe_type": 1
                 },
                 {
-                    "name": "w_fifo_rd_data_config",
-                    "width": 8,
+                    "name": "WS2812_Interface/r_data",
+                    "width": 1,
                     "probe_type": 1
                 },
                 {
-                    "name": "w_fifo_rd_data_data",
-                    "width": 8,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_num_leds",
+                    "name": "WS2812_Interface/r_data_delay",
                     "width": 16,
                     "probe_type": 1
                 },
                 {
-                    "name": "data",
+                    "name": "WS2812_Interface/rgb_counter",
+                    "width": 5,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/state",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/read_en",
                     "width": 1,
                     "probe_type": 1
                 },
                 {
-                    "name": "clk",
-                    "width": 1,
+                    "name": "WS2812_Interface/data_depth",
+                    "width": 16,
                     "probe_type": 1
                 },
                 {
-                    "name": "w_rgb_data",
+                    "name": "WS2812_Interface/low_count",
+                    "width": 11,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/r_data_count",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "WS2812_Interface/led_color",
                     "width": 24,
                     "probe_type": 1
                 },
                 {
-                    "name": "w_write_config",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_data_length",
+                    "name": "WS2812_Interface/r_data_depth",
                     "width": 16,
                     "probe_type": 1
                 },
                 {
-                    "name": "w_data_depth",
+                    "name": "WS2812_Interface/data_delay",
                     "width": 16,
                     "probe_type": 1
                 },
                 {
-                    "name": "w_f_empty_data",
+                    "name": "WS2812_Interface/clk",
                     "width": 1,
                     "probe_type": 1
                 },
                 {
-                    "name": "w_rx_dv_config",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_address",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "i_rx_serial_data",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_write_data",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "led",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_fifo_rd_en_data",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_fifo_rd_en_config",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_data_dv",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_rx_byte_data",
-                    "width": 8,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_rx_dv_data",
-                    "width": 1,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_rx_byte_config",
-                    "width": 8,
-                    "probe_type": 1
-                },
-                {
-                    "name": "w_f_empty_config",
+                    "name": "WS2812_Interface/write_config",
                     "width": 1,
                     "probe_type": 1
                 }
@@ -267,798 +297,2404 @@
                     },
                     {
                         "name": "la0_probe0[0]",
-                        "net": "w_rgb_data_out[0]",
-                        "path": []
+                        "net": "state[0]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe0[1]",
-                        "net": "w_rgb_data_out[1]",
-                        "path": []
+                        "net": "state[1]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe0[2]",
-                        "net": "w_rgb_data_out[2]",
-                        "path": []
+                        "net": "state[2]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe0[3]",
-                        "net": "w_rgb_data_out[3]",
-                        "path": []
+                        "net": "state[3]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[4]",
-                        "net": "w_rgb_data_out[4]",
-                        "path": []
+                        "name": "la0_probe1[0]",
+                        "net": "r_data_delay[0]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[5]",
-                        "net": "w_rgb_data_out[5]",
-                        "path": []
+                        "name": "la0_probe1[1]",
+                        "net": "r_data_delay[1]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[6]",
-                        "net": "w_rgb_data_out[6]",
-                        "path": []
+                        "name": "la0_probe1[2]",
+                        "net": "r_data_delay[2]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[7]",
-                        "net": "w_rgb_data_out[7]",
-                        "path": []
+                        "name": "la0_probe1[3]",
+                        "net": "r_data_delay[3]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[8]",
-                        "net": "w_rgb_data_out[8]",
-                        "path": []
+                        "name": "la0_probe1[4]",
+                        "net": "r_data_delay[4]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[9]",
-                        "net": "w_rgb_data_out[9]",
-                        "path": []
+                        "name": "la0_probe1[5]",
+                        "net": "r_data_delay[5]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[10]",
-                        "net": "w_rgb_data_out[10]",
-                        "path": []
+                        "name": "la0_probe1[6]",
+                        "net": "r_data_delay[6]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[11]",
-                        "net": "w_rgb_data_out[11]",
-                        "path": []
+                        "name": "la0_probe1[7]",
+                        "net": "r_data_delay[7]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[12]",
-                        "net": "w_rgb_data_out[12]",
-                        "path": []
+                        "name": "la0_probe1[8]",
+                        "net": "r_data_delay[8]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[13]",
-                        "net": "w_rgb_data_out[13]",
-                        "path": []
+                        "name": "la0_probe1[9]",
+                        "net": "r_data_delay[9]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[14]",
-                        "net": "w_rgb_data_out[14]",
-                        "path": []
+                        "name": "la0_probe1[10]",
+                        "net": "r_data_delay[10]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[15]",
-                        "net": "w_rgb_data_out[15]",
-                        "path": []
+                        "name": "la0_probe1[11]",
+                        "net": "r_data_delay[11]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[16]",
-                        "net": "w_rgb_data_out[16]",
-                        "path": []
+                        "name": "la0_probe1[12]",
+                        "net": "r_data_delay[12]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[17]",
-                        "net": "w_rgb_data_out[17]",
-                        "path": []
+                        "name": "la0_probe1[13]",
+                        "net": "r_data_delay[13]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[18]",
-                        "net": "w_rgb_data_out[18]",
-                        "path": []
+                        "name": "la0_probe1[14]",
+                        "net": "r_data_delay[14]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe0[19]",
-                        "net": "w_rgb_data_out[19]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe0[20]",
-                        "net": "w_rgb_data_out[20]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe0[21]",
-                        "net": "w_rgb_data_out[21]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe0[22]",
-                        "net": "w_rgb_data_out[22]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe0[23]",
-                        "net": "w_rgb_data_out[23]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe1",
-                        "net": "i_rx_serial_config",
-                        "path": []
+                        "name": "la0_probe1[15]",
+                        "net": "r_data_delay[15]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe2[0]",
-                        "net": "w_data_count[0]",
-                        "path": []
+                        "net": "r_data_config[0]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe2[1]",
-                        "net": "w_data_count[1]",
-                        "path": []
+                        "net": "r_data_config[1]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe2[2]",
-                        "net": "w_data_count[2]",
-                        "path": []
+                        "net": "r_data_config[2]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe2[3]",
-                        "net": "w_data_count[3]",
-                        "path": []
+                        "net": "r_data_config[3]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe2[4]",
-                        "net": "w_data_count[4]",
-                        "path": []
+                        "net": "r_data_config[4]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe2[5]",
-                        "net": "w_data_count[5]",
-                        "path": []
+                        "net": "r_data_config[5]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe2[6]",
-                        "net": "w_data_count[6]",
-                        "path": []
+                        "net": "r_data_config[6]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe2[7]",
-                        "net": "w_data_count[7]",
-                        "path": []
+                        "net": "r_data_config[7]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe2[8]",
-                        "net": "w_data_count[8]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe2[9]",
-                        "net": "w_data_count[9]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe2[10]",
-                        "net": "w_data_count[10]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe2[11]",
-                        "net": "w_data_count[11]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe2[12]",
-                        "net": "w_data_count[12]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe2[13]",
-                        "net": "w_data_count[13]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe2[14]",
-                        "net": "w_data_count[14]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe2[15]",
-                        "net": "w_data_count[15]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe3[0]",
-                        "net": "w_fifo_rd_data_config[0]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe3[1]",
-                        "net": "w_fifo_rd_data_config[1]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe3[2]",
-                        "net": "w_fifo_rd_data_config[2]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe3[3]",
-                        "net": "w_fifo_rd_data_config[3]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe3[4]",
-                        "net": "w_fifo_rd_data_config[4]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe3[5]",
-                        "net": "w_fifo_rd_data_config[5]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe3[6]",
-                        "net": "w_fifo_rd_data_config[6]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe3[7]",
-                        "net": "w_fifo_rd_data_config[7]",
-                        "path": []
+                        "name": "la0_probe3",
+                        "net": "reset",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe4[0]",
-                        "net": "w_fifo_rd_data_data[0]",
-                        "path": []
+                        "net": "data_delay[0]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe4[1]",
-                        "net": "w_fifo_rd_data_data[1]",
-                        "path": []
+                        "net": "data_delay[1]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe4[2]",
-                        "net": "w_fifo_rd_data_data[2]",
-                        "path": []
+                        "net": "data_delay[2]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe4[3]",
-                        "net": "w_fifo_rd_data_data[3]",
-                        "path": []
+                        "net": "data_delay[3]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe4[4]",
-                        "net": "w_fifo_rd_data_data[4]",
-                        "path": []
+                        "net": "data_delay[4]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe4[5]",
-                        "net": "w_fifo_rd_data_data[5]",
-                        "path": []
+                        "net": "data_delay[5]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe4[6]",
-                        "net": "w_fifo_rd_data_data[6]",
-                        "path": []
+                        "net": "data_delay[6]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe4[7]",
-                        "net": "w_fifo_rd_data_data[7]",
-                        "path": []
+                        "net": "data_delay[7]",
+                        "path": [
+                            "wsctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[8]",
+                        "net": "data_delay[8]",
+                        "path": [
+                            "wsctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[9]",
+                        "net": "data_delay[9]",
+                        "path": [
+                            "wsctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[10]",
+                        "net": "data_delay[10]",
+                        "path": [
+                            "wsctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[11]",
+                        "net": "data_delay[11]",
+                        "path": [
+                            "wsctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[12]",
+                        "net": "data_delay[12]",
+                        "path": [
+                            "wsctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[13]",
+                        "net": "data_delay[13]",
+                        "path": [
+                            "wsctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[14]",
+                        "net": "data_delay[14]",
+                        "path": [
+                            "wsctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[15]",
+                        "net": "data_delay[15]",
+                        "path": [
+                            "wsctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe5[0]",
-                        "net": "w_num_leds[0]",
-                        "path": []
+                        "net": "state[0]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe5[1]",
-                        "net": "w_num_leds[1]",
-                        "path": []
+                        "net": "state[1]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe5[2]",
-                        "net": "w_num_leds[2]",
-                        "path": []
+                        "net": "state[2]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe5[3]",
-                        "net": "w_num_leds[3]",
-                        "path": []
+                        "net": "state[3]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[4]",
-                        "net": "w_num_leds[4]",
-                        "path": []
+                        "name": "la0_probe6[0]",
+                        "net": "num_leds[0]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[5]",
-                        "net": "w_num_leds[5]",
-                        "path": []
+                        "name": "la0_probe6[1]",
+                        "net": "num_leds[1]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[6]",
-                        "net": "w_num_leds[6]",
-                        "path": []
+                        "name": "la0_probe6[2]",
+                        "net": "num_leds[2]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[7]",
-                        "net": "w_num_leds[7]",
-                        "path": []
+                        "name": "la0_probe6[3]",
+                        "net": "num_leds[3]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[8]",
-                        "net": "w_num_leds[8]",
-                        "path": []
+                        "name": "la0_probe6[4]",
+                        "net": "num_leds[4]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[9]",
-                        "net": "w_num_leds[9]",
-                        "path": []
+                        "name": "la0_probe6[5]",
+                        "net": "num_leds[5]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[10]",
-                        "net": "w_num_leds[10]",
-                        "path": []
+                        "name": "la0_probe6[6]",
+                        "net": "num_leds[6]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[11]",
-                        "net": "w_num_leds[11]",
-                        "path": []
+                        "name": "la0_probe6[7]",
+                        "net": "num_leds[7]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[12]",
-                        "net": "w_num_leds[12]",
-                        "path": []
+                        "name": "la0_probe6[8]",
+                        "net": "num_leds[8]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[13]",
-                        "net": "w_num_leds[13]",
-                        "path": []
+                        "name": "la0_probe6[9]",
+                        "net": "num_leds[9]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[14]",
-                        "net": "w_num_leds[14]",
-                        "path": []
+                        "name": "la0_probe6[10]",
+                        "net": "num_leds[10]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe5[15]",
-                        "net": "w_num_leds[15]",
-                        "path": []
+                        "name": "la0_probe6[11]",
+                        "net": "num_leds[11]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe6",
-                        "net": "data",
-                        "path": []
+                        "name": "la0_probe6[12]",
+                        "net": "num_leds[12]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
-                        "name": "la0_probe7",
-                        "net": "clk",
-                        "path": []
+                        "name": "la0_probe6[13]",
+                        "net": "num_leds[13]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe6[14]",
+                        "net": "num_leds[14]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe6[15]",
+                        "net": "num_leds[15]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[0]",
+                        "net": "r_data_depth[0]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[1]",
+                        "net": "r_data_depth[1]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[2]",
+                        "net": "r_data_depth[2]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[3]",
+                        "net": "r_data_depth[3]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[4]",
+                        "net": "r_data_depth[4]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[5]",
+                        "net": "r_data_depth[5]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[6]",
+                        "net": "r_data_depth[6]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[7]",
+                        "net": "r_data_depth[7]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[8]",
+                        "net": "r_data_depth[8]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[9]",
+                        "net": "r_data_depth[9]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[10]",
+                        "net": "r_data_depth[10]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[11]",
+                        "net": "r_data_depth[11]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[12]",
+                        "net": "r_data_depth[12]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[13]",
+                        "net": "r_data_depth[13]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[14]",
+                        "net": "r_data_depth[14]",
+                        "path": [
+                            "data_ctrl"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7[15]",
+                        "net": "r_data_depth[15]",
+                        "path": [
+                            "data_ctrl"
+                        ]
                     },
                     {
                         "name": "la0_probe8[0]",
-                        "net": "w_rgb_data[0]",
-                        "path": []
+                        "net": "r_num_leds[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[1]",
-                        "net": "w_rgb_data[1]",
-                        "path": []
+                        "net": "r_num_leds[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[2]",
-                        "net": "w_rgb_data[2]",
-                        "path": []
+                        "net": "r_num_leds[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[3]",
-                        "net": "w_rgb_data[3]",
-                        "path": []
+                        "net": "r_num_leds[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[4]",
-                        "net": "w_rgb_data[4]",
-                        "path": []
+                        "net": "r_num_leds[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[5]",
-                        "net": "w_rgb_data[5]",
-                        "path": []
+                        "net": "r_num_leds[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[6]",
-                        "net": "w_rgb_data[6]",
-                        "path": []
+                        "net": "r_num_leds[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[7]",
-                        "net": "w_rgb_data[7]",
-                        "path": []
+                        "net": "r_num_leds[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[8]",
-                        "net": "w_rgb_data[8]",
-                        "path": []
+                        "net": "r_num_leds[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[9]",
-                        "net": "w_rgb_data[9]",
-                        "path": []
+                        "net": "r_num_leds[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[10]",
-                        "net": "w_rgb_data[10]",
-                        "path": []
+                        "net": "r_num_leds[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[11]",
-                        "net": "w_rgb_data[11]",
-                        "path": []
+                        "net": "r_num_leds[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[12]",
-                        "net": "w_rgb_data[12]",
-                        "path": []
+                        "net": "r_num_leds[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[13]",
-                        "net": "w_rgb_data[13]",
-                        "path": []
+                        "net": "r_num_leds[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[14]",
-                        "net": "w_rgb_data[14]",
-                        "path": []
+                        "net": "r_num_leds[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe8[15]",
-                        "net": "w_rgb_data[15]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe8[16]",
-                        "net": "w_rgb_data[16]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe8[17]",
-                        "net": "w_rgb_data[17]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe8[18]",
-                        "net": "w_rgb_data[18]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe8[19]",
-                        "net": "w_rgb_data[19]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe8[20]",
-                        "net": "w_rgb_data[20]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe8[21]",
-                        "net": "w_rgb_data[21]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe8[22]",
-                        "net": "w_rgb_data[22]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe8[23]",
-                        "net": "w_rgb_data[23]",
-                        "path": []
+                        "net": "r_num_leds[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe9",
-                        "net": "w_write_config",
-                        "path": []
+                        "net": "data",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[0]",
-                        "net": "w_data_length[0]",
-                        "path": []
+                        "net": "high_count[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[1]",
-                        "net": "w_data_length[1]",
-                        "path": []
+                        "net": "high_count[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[2]",
-                        "net": "w_data_length[2]",
-                        "path": []
+                        "net": "high_count[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[3]",
-                        "net": "w_data_length[3]",
-                        "path": []
+                        "net": "high_count[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[4]",
-                        "net": "w_data_length[4]",
-                        "path": []
+                        "net": "high_count[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[5]",
-                        "net": "w_data_length[5]",
-                        "path": []
+                        "net": "high_count[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[6]",
-                        "net": "w_data_length[6]",
-                        "path": []
+                        "net": "high_count[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[7]",
-                        "net": "w_data_length[7]",
-                        "path": []
+                        "net": "high_count[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[8]",
-                        "net": "w_data_length[8]",
-                        "path": []
+                        "net": "high_count[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[9]",
-                        "net": "w_data_length[9]",
-                        "path": []
+                        "net": "high_count[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe10[10]",
-                        "net": "w_data_length[10]",
-                        "path": []
+                        "net": "high_count[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe10[11]",
-                        "net": "w_data_length[11]",
-                        "path": []
+                        "name": "la0_probe11",
+                        "net": "data_dv",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe10[12]",
-                        "net": "w_data_length[12]",
-                        "path": []
+                        "name": "la0_probe12[0]",
+                        "net": "data_count[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe10[13]",
-                        "net": "w_data_length[13]",
-                        "path": []
+                        "name": "la0_probe12[1]",
+                        "net": "data_count[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe10[14]",
-                        "net": "w_data_length[14]",
-                        "path": []
+                        "name": "la0_probe12[2]",
+                        "net": "data_count[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe10[15]",
-                        "net": "w_data_length[15]",
-                        "path": []
+                        "name": "la0_probe12[3]",
+                        "net": "data_count[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[0]",
-                        "net": "w_data_depth[0]",
-                        "path": []
+                        "name": "la0_probe12[4]",
+                        "net": "data_count[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[1]",
-                        "net": "w_data_depth[1]",
-                        "path": []
+                        "name": "la0_probe12[5]",
+                        "net": "data_count[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[2]",
-                        "net": "w_data_depth[2]",
-                        "path": []
+                        "name": "la0_probe12[6]",
+                        "net": "data_count[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[3]",
-                        "net": "w_data_depth[3]",
-                        "path": []
+                        "name": "la0_probe12[7]",
+                        "net": "data_count[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[4]",
-                        "net": "w_data_depth[4]",
-                        "path": []
+                        "name": "la0_probe12[8]",
+                        "net": "data_count[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[5]",
-                        "net": "w_data_depth[5]",
-                        "path": []
+                        "name": "la0_probe12[9]",
+                        "net": "data_count[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[6]",
-                        "net": "w_data_depth[6]",
-                        "path": []
+                        "name": "la0_probe12[10]",
+                        "net": "data_count[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[7]",
-                        "net": "w_data_depth[7]",
-                        "path": []
+                        "name": "la0_probe12[11]",
+                        "net": "data_count[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[8]",
-                        "net": "w_data_depth[8]",
-                        "path": []
+                        "name": "la0_probe12[12]",
+                        "net": "data_count[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[9]",
-                        "net": "w_data_depth[9]",
-                        "path": []
+                        "name": "la0_probe12[13]",
+                        "net": "data_count[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[10]",
-                        "net": "w_data_depth[10]",
-                        "path": []
+                        "name": "la0_probe12[14]",
+                        "net": "data_count[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[11]",
-                        "net": "w_data_depth[11]",
-                        "path": []
+                        "name": "la0_probe12[15]",
+                        "net": "data_count[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[12]",
-                        "net": "w_data_depth[12]",
-                        "path": []
+                        "name": "la0_probe13[0]",
+                        "net": "reset_count[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[13]",
-                        "net": "w_data_depth[13]",
-                        "path": []
+                        "name": "la0_probe13[1]",
+                        "net": "reset_count[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[14]",
-                        "net": "w_data_depth[14]",
-                        "path": []
+                        "name": "la0_probe13[2]",
+                        "net": "reset_count[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe11[15]",
-                        "net": "w_data_depth[15]",
-                        "path": []
+                        "name": "la0_probe13[3]",
+                        "net": "reset_count[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe12",
-                        "net": "w_f_empty_data",
-                        "path": []
+                        "name": "la0_probe13[4]",
+                        "net": "reset_count[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe13",
-                        "net": "w_rx_dv_config",
-                        "path": []
+                        "name": "la0_probe13[5]",
+                        "net": "reset_count[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe14",
-                        "net": "w_address",
-                        "path": []
+                        "name": "la0_probe13[6]",
+                        "net": "reset_count[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[7]",
+                        "net": "reset_count[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[8]",
+                        "net": "reset_count[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[9]",
+                        "net": "reset_count[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[10]",
+                        "net": "reset_count[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[11]",
+                        "net": "reset_count[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[12]",
+                        "net": "reset_count[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[13]",
+                        "net": "reset_count[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[14]",
+                        "net": "reset_count[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[15]",
+                        "net": "reset_count[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[16]",
+                        "net": "reset_count[16]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[17]",
+                        "net": "reset_count[17]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[18]",
+                        "net": "reset_count[18]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[19]",
+                        "net": "reset_count[19]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[20]",
+                        "net": "reset_count[20]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[21]",
+                        "net": "reset_count[21]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[22]",
+                        "net": "reset_count[22]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[23]",
+                        "net": "reset_count[23]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[24]",
+                        "net": "reset_count[24]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[25]",
+                        "net": "reset_count[25]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[26]",
+                        "net": "reset_count[26]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[27]",
+                        "net": "reset_count[27]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[28]",
+                        "net": "reset_count[28]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[29]",
+                        "net": "reset_count[29]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[30]",
+                        "net": "reset_count[30]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13[31]",
+                        "net": "reset_count[31]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[0]",
+                        "net": "led_counter[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[1]",
+                        "net": "led_counter[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[2]",
+                        "net": "led_counter[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[3]",
+                        "net": "led_counter[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[4]",
+                        "net": "led_counter[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[5]",
+                        "net": "led_counter[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[6]",
+                        "net": "led_counter[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[7]",
+                        "net": "led_counter[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[8]",
+                        "net": "led_counter[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[9]",
+                        "net": "led_counter[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[10]",
+                        "net": "led_counter[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[11]",
+                        "net": "led_counter[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[12]",
+                        "net": "led_counter[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[13]",
+                        "net": "led_counter[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[14]",
+                        "net": "led_counter[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14[15]",
+                        "net": "led_counter[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe15",
-                        "net": "i_rx_serial_data",
-                        "path": []
+                        "net": "r_read_en",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe16",
-                        "net": "w_write_data",
-                        "path": []
+                        "name": "la0_probe16[0]",
+                        "net": "rgb_data_in[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe17",
-                        "net": "led",
-                        "path": []
+                        "name": "la0_probe16[1]",
+                        "net": "rgb_data_in[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[2]",
+                        "net": "rgb_data_in[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[3]",
+                        "net": "rgb_data_in[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[4]",
+                        "net": "rgb_data_in[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[5]",
+                        "net": "rgb_data_in[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[6]",
+                        "net": "rgb_data_in[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[7]",
+                        "net": "rgb_data_in[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[8]",
+                        "net": "rgb_data_in[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[9]",
+                        "net": "rgb_data_in[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[10]",
+                        "net": "rgb_data_in[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[11]",
+                        "net": "rgb_data_in[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[12]",
+                        "net": "rgb_data_in[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[13]",
+                        "net": "rgb_data_in[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[14]",
+                        "net": "rgb_data_in[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[15]",
+                        "net": "rgb_data_in[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[16]",
+                        "net": "rgb_data_in[16]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[17]",
+                        "net": "rgb_data_in[17]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[18]",
+                        "net": "rgb_data_in[18]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[19]",
+                        "net": "rgb_data_in[19]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[20]",
+                        "net": "rgb_data_in[20]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[21]",
+                        "net": "rgb_data_in[21]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[22]",
+                        "net": "rgb_data_in[22]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16[23]",
+                        "net": "rgb_data_in[23]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[0]",
+                        "net": "num_leds[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[1]",
+                        "net": "num_leds[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[2]",
+                        "net": "num_leds[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[3]",
+                        "net": "num_leds[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[4]",
+                        "net": "num_leds[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[5]",
+                        "net": "num_leds[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[6]",
+                        "net": "num_leds[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[7]",
+                        "net": "num_leds[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[8]",
+                        "net": "num_leds[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[9]",
+                        "net": "num_leds[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[10]",
+                        "net": "num_leds[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[11]",
+                        "net": "num_leds[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[12]",
+                        "net": "num_leds[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[13]",
+                        "net": "num_leds[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[14]",
+                        "net": "num_leds[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17[15]",
+                        "net": "num_leds[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe18",
-                        "net": "w_fifo_rd_en_data",
-                        "path": []
+                        "net": "r_data",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe19",
-                        "net": "w_fifo_rd_en_config",
-                        "path": []
+                        "name": "la0_probe19[0]",
+                        "net": "r_data_delay[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe20",
-                        "net": "w_data_dv",
-                        "path": []
+                        "name": "la0_probe19[1]",
+                        "net": "r_data_delay[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[2]",
+                        "net": "r_data_delay[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[3]",
+                        "net": "r_data_delay[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[4]",
+                        "net": "r_data_delay[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[5]",
+                        "net": "r_data_delay[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[6]",
+                        "net": "r_data_delay[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[7]",
+                        "net": "r_data_delay[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[8]",
+                        "net": "r_data_delay[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[9]",
+                        "net": "r_data_delay[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[10]",
+                        "net": "r_data_delay[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[11]",
+                        "net": "r_data_delay[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[12]",
+                        "net": "r_data_delay[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[13]",
+                        "net": "r_data_delay[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[14]",
+                        "net": "r_data_delay[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19[15]",
+                        "net": "r_data_delay[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe20[0]",
+                        "net": "rgb_counter[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe20[1]",
+                        "net": "rgb_counter[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe20[2]",
+                        "net": "rgb_counter[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe20[3]",
+                        "net": "rgb_counter[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe20[4]",
+                        "net": "rgb_counter[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe21[0]",
-                        "net": "w_rx_byte_data[0]",
-                        "path": []
+                        "net": "state[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe21[1]",
-                        "net": "w_rx_byte_data[1]",
-                        "path": []
+                        "net": "state[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe21[2]",
-                        "net": "w_rx_byte_data[2]",
-                        "path": []
+                        "net": "state[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe21[3]",
-                        "net": "w_rx_byte_data[3]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe21[4]",
-                        "net": "w_rx_byte_data[4]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe21[5]",
-                        "net": "w_rx_byte_data[5]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe21[6]",
-                        "net": "w_rx_byte_data[6]",
-                        "path": []
-                    },
-                    {
-                        "name": "la0_probe21[7]",
-                        "net": "w_rx_byte_data[7]",
-                        "path": []
+                        "net": "state[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe22",
-                        "net": "w_rx_dv_data",
-                        "path": []
+                        "net": "read_en",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe23[0]",
-                        "net": "w_rx_byte_config[0]",
-                        "path": []
+                        "net": "data_depth[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe23[1]",
-                        "net": "w_rx_byte_config[1]",
-                        "path": []
+                        "net": "data_depth[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe23[2]",
-                        "net": "w_rx_byte_config[2]",
-                        "path": []
+                        "net": "data_depth[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe23[3]",
-                        "net": "w_rx_byte_config[3]",
-                        "path": []
+                        "net": "data_depth[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe23[4]",
-                        "net": "w_rx_byte_config[4]",
-                        "path": []
+                        "net": "data_depth[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe23[5]",
-                        "net": "w_rx_byte_config[5]",
-                        "path": []
+                        "net": "data_depth[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe23[6]",
-                        "net": "w_rx_byte_config[6]",
-                        "path": []
+                        "net": "data_depth[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
                         "name": "la0_probe23[7]",
-                        "net": "w_rx_byte_config[7]",
-                        "path": []
+                        "net": "data_depth[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     },
                     {
-                        "name": "la0_probe24",
-                        "net": "w_f_empty_config",
-                        "path": []
+                        "name": "la0_probe23[8]",
+                        "net": "data_depth[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe23[9]",
+                        "net": "data_depth[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe23[10]",
+                        "net": "data_depth[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe23[11]",
+                        "net": "data_depth[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe23[12]",
+                        "net": "data_depth[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe23[13]",
+                        "net": "data_depth[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe23[14]",
+                        "net": "data_depth[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe23[15]",
+                        "net": "data_depth[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[0]",
+                        "net": "low_count[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[1]",
+                        "net": "low_count[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[2]",
+                        "net": "low_count[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[3]",
+                        "net": "low_count[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[4]",
+                        "net": "low_count[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[5]",
+                        "net": "low_count[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[6]",
+                        "net": "low_count[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[7]",
+                        "net": "low_count[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[8]",
+                        "net": "low_count[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[9]",
+                        "net": "low_count[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24[10]",
+                        "net": "low_count[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[0]",
+                        "net": "r_data_count[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[1]",
+                        "net": "r_data_count[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[2]",
+                        "net": "r_data_count[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[3]",
+                        "net": "r_data_count[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[4]",
+                        "net": "r_data_count[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[5]",
+                        "net": "r_data_count[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[6]",
+                        "net": "r_data_count[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[7]",
+                        "net": "r_data_count[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[8]",
+                        "net": "r_data_count[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[9]",
+                        "net": "r_data_count[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[10]",
+                        "net": "r_data_count[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[11]",
+                        "net": "r_data_count[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[12]",
+                        "net": "r_data_count[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[13]",
+                        "net": "r_data_count[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[14]",
+                        "net": "r_data_count[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25[15]",
+                        "net": "r_data_count[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[0]",
+                        "net": "led_color[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[1]",
+                        "net": "led_color[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[2]",
+                        "net": "led_color[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[3]",
+                        "net": "led_color[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[4]",
+                        "net": "led_color[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[5]",
+                        "net": "led_color[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[6]",
+                        "net": "led_color[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[7]",
+                        "net": "led_color[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[8]",
+                        "net": "led_color[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[9]",
+                        "net": "led_color[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[10]",
+                        "net": "led_color[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[11]",
+                        "net": "led_color[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[12]",
+                        "net": "led_color[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[13]",
+                        "net": "led_color[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[14]",
+                        "net": "led_color[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[15]",
+                        "net": "led_color[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[16]",
+                        "net": "led_color[16]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[17]",
+                        "net": "led_color[17]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[18]",
+                        "net": "led_color[18]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[19]",
+                        "net": "led_color[19]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[20]",
+                        "net": "led_color[20]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[21]",
+                        "net": "led_color[21]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[22]",
+                        "net": "led_color[22]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[23]",
+                        "net": "led_color[23]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[0]",
+                        "net": "r_data_depth[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[1]",
+                        "net": "r_data_depth[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[2]",
+                        "net": "r_data_depth[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[3]",
+                        "net": "r_data_depth[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[4]",
+                        "net": "r_data_depth[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[5]",
+                        "net": "r_data_depth[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[6]",
+                        "net": "r_data_depth[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[7]",
+                        "net": "r_data_depth[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[8]",
+                        "net": "r_data_depth[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[9]",
+                        "net": "r_data_depth[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[10]",
+                        "net": "r_data_depth[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[11]",
+                        "net": "r_data_depth[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[12]",
+                        "net": "r_data_depth[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[13]",
+                        "net": "r_data_depth[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[14]",
+                        "net": "r_data_depth[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27[15]",
+                        "net": "r_data_depth[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[0]",
+                        "net": "data_delay[0]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[1]",
+                        "net": "data_delay[1]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[2]",
+                        "net": "data_delay[2]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[3]",
+                        "net": "data_delay[3]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[4]",
+                        "net": "data_delay[4]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[5]",
+                        "net": "data_delay[5]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[6]",
+                        "net": "data_delay[6]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[7]",
+                        "net": "data_delay[7]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[8]",
+                        "net": "data_delay[8]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[9]",
+                        "net": "data_delay[9]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[10]",
+                        "net": "data_delay[10]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[11]",
+                        "net": "data_delay[11]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[12]",
+                        "net": "data_delay[12]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[13]",
+                        "net": "data_delay[13]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[14]",
+                        "net": "data_delay[14]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28[15]",
+                        "net": "data_delay[15]",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe29",
+                        "net": "clk",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe30",
+                        "net": "write_config",
+                        "path": [
+                            "WS2812_Interface"
+                        ]
                     }
                 ]
             }
@@ -1076,60 +2712,108 @@
             "capture_control": true,
             "selected_nets": [
                 {
-                    "name": "w_rgb_data_out",
-                    "width": 24,
+                    "name": "state",
+                    "width": 4,
                     "clk_domain": "clk",
                     "selected_probe_type": "DATA AND TRIGGER",
                     "child": [],
-                    "path": [],
-                    "net_idx_left": 23,
+                    "path": [
+                        "wsctrl"
+                    ],
+                    "net_idx_left": 3,
                     "net_idx_right": 0
                 },
                 {
-                    "name": "i_rx_serial_config",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_data_count",
+                    "name": "r_data_delay",
                     "width": 16,
                     "clk_domain": "clk",
                     "selected_probe_type": "DATA AND TRIGGER",
                     "child": [],
-                    "path": [],
+                    "path": [
+                        "wsctrl"
+                    ],
                     "net_idx_left": 15,
                     "net_idx_right": 0
                 },
                 {
-                    "name": "w_fifo_rd_data_config",
+                    "name": "r_data_config",
                     "width": 8,
                     "clk_domain": "clk",
                     "selected_probe_type": "DATA AND TRIGGER",
                     "child": [],
-                    "path": [],
+                    "path": [
+                        "wsctrl"
+                    ],
                     "net_idx_left": 7,
                     "net_idx_right": 0
                 },
                 {
-                    "name": "w_fifo_rd_data_data",
-                    "width": 8,
+                    "name": "reset",
+                    "width": 1,
                     "clk_domain": "clk",
                     "selected_probe_type": "DATA AND TRIGGER",
                     "child": [],
-                    "path": [],
-                    "net_idx_left": 7,
-                    "net_idx_right": 0
+                    "path": [
+                        "wsctrl"
+                    ]
                 },
                 {
-                    "name": "w_num_leds",
+                    "name": "data_delay",
                     "width": 16,
                     "clk_domain": "clk",
                     "selected_probe_type": "DATA AND TRIGGER",
                     "child": [],
-                    "path": [],
+                    "path": [
+                        "wsctrl"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "state",
+                    "width": 4,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "data_ctrl"
+                    ],
+                    "net_idx_left": 3,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "num_leds",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "data_ctrl"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "r_data_depth",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "data_ctrl"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "r_num_leds",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
                     "net_idx_left": 15,
                     "net_idx_right": 0
                 },
@@ -1139,7 +2823,229 @@
                     "clk_domain": "clk",
                     "selected_probe_type": "DATA AND TRIGGER",
                     "child": [],
-                    "path": []
+                    "path": [
+                        "WS2812_Interface"
+                    ]
+                },
+                {
+                    "name": "high_count",
+                    "width": 11,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 10,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "data_dv",
+                    "width": 1,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ]
+                },
+                {
+                    "name": "data_count",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "reset_count",
+                    "width": 32,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 31,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "led_counter",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "r_read_en",
+                    "width": 1,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ]
+                },
+                {
+                    "name": "rgb_data_in",
+                    "width": 24,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 23,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "num_leds",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "r_data",
+                    "width": 1,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ]
+                },
+                {
+                    "name": "r_data_delay",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "rgb_counter",
+                    "width": 5,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 4,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "state",
+                    "width": 4,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 3,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "read_en",
+                    "width": 1,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ]
+                },
+                {
+                    "name": "data_depth",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "low_count",
+                    "width": 11,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 10,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "r_data_count",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "led_color",
+                    "width": 24,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 23,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "r_data_depth",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "data_delay",
+                    "width": 16,
+                    "clk_domain": "clk",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "WS2812_Interface"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
                 },
                 {
                     "name": "clk",
@@ -1147,153 +3053,19 @@
                     "clk_domain": "clk",
                     "selected_probe_type": "DATA AND TRIGGER",
                     "child": [],
-                    "path": []
+                    "path": [
+                        "WS2812_Interface"
+                    ]
                 },
                 {
-                    "name": "w_rgb_data",
-                    "width": 24,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": [],
-                    "net_idx_left": 23,
-                    "net_idx_right": 0
-                },
-                {
-                    "name": "w_write_config",
+                    "name": "write_config",
                     "width": 1,
                     "clk_domain": "clk",
                     "selected_probe_type": "DATA AND TRIGGER",
                     "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_data_length",
-                    "width": 16,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": [],
-                    "net_idx_left": 15,
-                    "net_idx_right": 0
-                },
-                {
-                    "name": "w_data_depth",
-                    "width": 16,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": [],
-                    "net_idx_left": 15,
-                    "net_idx_right": 0
-                },
-                {
-                    "name": "w_f_empty_data",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_rx_dv_config",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_address",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "i_rx_serial_data",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_write_data",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "led",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_fifo_rd_en_data",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_fifo_rd_en_config",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_data_dv",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_rx_byte_data",
-                    "width": 8,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": [],
-                    "net_idx_left": 7,
-                    "net_idx_right": 0
-                },
-                {
-                    "name": "w_rx_dv_data",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
-                },
-                {
-                    "name": "w_rx_byte_config",
-                    "width": 8,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": [],
-                    "net_idx_left": 7,
-                    "net_idx_right": 0
-                },
-                {
-                    "name": "w_f_empty_config",
-                    "width": 1,
-                    "clk_domain": "clk",
-                    "selected_probe_type": "DATA AND TRIGGER",
-                    "child": [],
-                    "path": []
+                    "path": [
+                        "WS2812_Interface"
+                    ]
                 }
             ],
             "top_module": "WS2812_TOP",

@@ -1,5 +1,5 @@
 # Efinity IO Placement 
-# Interface File: /home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/outflow/WS2812_Custom.interface.csv
+# Interface File: outflow/WS2812_Custom.interface.csv
 # Version:        2023.2.307
 # Date:           Dec 15 2023
 
@@ -19,6 +19,8 @@ jtag_inst1_RUNTEST	0	5	1
 jtag_inst1_SHIFT  	0	5	3
 jtag_inst1_UPDATE 	0	6	1
 jtag_inst1_CAPTURE	0	6	3
-i_rx_serial       	0	283	1
+data              	0	274	0
+i_rx_serial_data  	0	283	1
 led               	323	643	0
+i_rx_serial_config	338	7	1
 clk               	338	9	1

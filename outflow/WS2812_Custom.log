@@ -1,0 +1,1131 @@
+Running: efx_run_map.py WS2812_Custom --family Trion --device T120F324 --project_xml /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.xml -v WS2812_config_ctrl.v,t:default -v WS2812_TOP.v,t:default -v test_uart_rx.v,t:default -v WS2812_bram.v,t:default -v ws2812_Interface.v,t:default -v WS2812_data_ctrl.v,t:default --dir /home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO --output_dir outflow --opt root=WS2812_TOP --opt veri_options=verilog_mode=verilog_2k,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on I=ip/phy_FIFO --opt write-premap-module=WS2812_Custom.elab.vdb
+Creating /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_syn
+Running: /home/efx/hdd/shreeyash/efinity/2023.2/bin/efx_map --project WS2812_Custom --family Trion --device T120F324 --output-dir outflow --I /home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO --v /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_config_ctrl.v,t:default --v /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v,t:default --v /home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v,t:default --v /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v,t:default --v /home/efx/hdd/efinity_company_projects/c4ff9f63ee/ws2812_Interface.v,t:default --v /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_data_ctrl.v,t:default --project-xml /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.xml --binary-db outflow/WS2812_Custom.vdb --root=WS2812_TOP --veri_options=verilog_mode=verilog_2k,vhdl_mode=vhdl_2008 --work-dir=work_syn --write-efx-verilog=outflow/WS2812_Custom.map.v --I=ip/phy_FIFO --write-premap-module=WS2812_Custom.elab.vdb
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2023.2.307
+[EFX-0000 INFO] Compiled: Dec 15 2023.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+INFO: Read project database "/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.xml"
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(8): INFO: compiling module 'EFX_IBUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(16): INFO: compiling module 'EFX_OBUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(23): INFO: compiling module 'EFX_IO_BUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(33): INFO: compiling module 'EFX_CLKOUT' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(41): INFO: compiling module 'EFX_IREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(51): INFO: compiling module 'EFX_OREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(60): INFO: compiling module 'EFX_IOREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(75): INFO: compiling module 'EFX_IDDIO' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(87): INFO: compiling module 'EFX_ODDIO' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(99): INFO: compiling module 'EFX_GPIO_V1' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(118): INFO: compiling module 'EFX_PLL_V1' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(136): INFO: compiling module 'EFX_OSC_V1' (VERI-1018)
+[EFX-0034 WARNING] Project XML file specified. Source files specified in the command line are ignored.
+INFO: Read project database "/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.xml"
+INFO: ***** Beginning Analysis ... *****
+INFO: default VHDL library search path is now "/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_config_ctrl.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v' (VERI-1482)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(10): WARNING: parameter 's_IDLE' becomes localparam in 'test_uart_rx' with formal parameter declaration list (VERI-1199)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(11): WARNING: parameter 's_RX_START_BIT' becomes localparam in 'test_uart_rx' with formal parameter declaration list (VERI-1199)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(12): WARNING: parameter 's_RX_DATA_BITS' becomes localparam in 'test_uart_rx' with formal parameter declaration list (VERI-1199)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(13): WARNING: parameter 's_RX_STOP_BIT' becomes localparam in 'test_uart_rx' with formal parameter declaration list (VERI-1199)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(14): WARNING: parameter 's_CLEANUP' becomes localparam in 'test_uart_rx' with formal parameter declaration list (VERI-1199)
+-- Analyzing Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ws2812_Interface.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_data_ctrl.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v' (VERI-1482)
+INFO: Analysis took 0.00724222 seconds.
+INFO: 	Analysis took 0.01 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 192.644 MB, end = 192.908 MB, delta = 0.264 MB
+INFO: Analysis resident set memory usage: begin = 76.132 MB, end = 77.24 MB, delta = 1.108 MB
+INFO: 	Analysis peak resident set memory usage = 77.24 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(75): WARNING: port 'almost_full_o' remains unconnected for this instance (VERI-1927)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(75): WARNING: port 'a_rst_i' is not connected on this instance (VERI-2435)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(85): WARNING: port 'almost_full_o' remains unconnected for this instance (VERI-1927)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(85): WARNING: port 'a_rst_i' is not connected on this instance (VERI-2435)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(109): WARNING: port 'reset' remains unconnected for this instance (VERI-1927)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(1): INFO: compiling module 'WS2812_TOP' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(1): INFO: compiling module 'test_uart_rx' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(53): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(60): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(68): WARNING: expression size 4 truncated to fit in target size 3 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(81): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(101): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/test_uart_rx.v(21): WARNING: net 'r_Rx_Byte[8]' does not have a driver (VDB-1002)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(109): WARNING: port 'a_wr_rst_i' remains unconnected for this instance (VERI-1927)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(49): INFO: compiling module 'phy_FIFO' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(390): INFO: compiling module 'efx_fifo_top_32d04aeed835495e81d0eaddcc997863_renamed_due_excessive_length_1' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(682): INFO: compiling module 'efx_fifo_ram_32d04aeed835495e81d0eaddcc997863(OUTPUT_REG=0,RAM_MUX_RATIO=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(719): INFO: extracting RAM for identifier 'ram' (VERI-2571)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(1000): INFO: compiling module 'efx_fifo_ctl_32d04aeed835495e81d0eaddcc997863(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(1276): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(1277): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(301): INFO: compiling module 'efx_fifo_bin2gray_32d04aeed835495e81d0eaddcc997863(WIDTH=10)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(130): INFO: compiling module 'efx_fifo_datasync_32d04aeed835495e81d0eaddcc997863(STAGE=2,WIDTH=10)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=10)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=9)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=8)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=7)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=6)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=4)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=3)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(213): INFO: compiling module 'efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=2)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(104): WARNING: actual bit length 9 differs from formal bit length 10 for port 'wr_datacount_o' (VERI-1330)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(107): WARNING: actual bit length 9 differs from formal bit length 10 for port 'rd_datacount_o' (VERI-1330)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v(89): WARNING: input port 'a_wr_rst_i' is not connected on this instance (VDB-1013)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v(1): INFO: compiling module 'bram' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v(18): INFO: extracting RAM for identifier 'led_reg' (VERI-2571)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v(18): WARNING: net 'led_reg' does not have a driver (VDB-1002)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_config_ctrl.v(1): INFO: compiling module 'WS2812_config_ctrl' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_config_ctrl.v(206): WARNING: expression size 32 truncated to fit in target size 16 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_config_ctrl.v(208): WARNING: expression size 17 truncated to fit in target size 16 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_data_ctrl.v(1): INFO: compiling module 'ws2812_data_ctrl' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_data_ctrl.v(99): WARNING: expression size 17 truncated to fit in target size 16 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ws2812_Interface.v(1): INFO: compiling module 'WS2812_Interface' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ws2812_Interface.v(99): WARNING: expression size 32 truncated to fit in target size 11 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ws2812_Interface.v(109): WARNING: expression size 32 truncated to fit in target size 11 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ws2812_Interface.v(113): WARNING: expression size 32 truncated to fit in target size 5 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ws2812_Interface.v(117): WARNING: expression size 17 truncated to fit in target size 16 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ws2812_Interface.v(123): WARNING: expression size 17 truncated to fit in target size 16 (VERI-1209)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(67): WARNING: input port 'a_rst_i' remains unconnected for this instance (VDB-1053)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(77): WARNING: input port 'a_rst_i' remains unconnected for this instance (VDB-1053)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v(99): WARNING: input port 'reset' remains unconnected for this instance (VDB-1053)
+INFO: Elaboration took 0.0157388 seconds.
+INFO: 	Elaboration took 0.01 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 192.908 MB, end = 199.512 MB, delta = 6.604 MB
+INFO: Elaboration resident set memory usage: begin = 77.24 MB, end = 84.384 MB, delta = 7.144 MB
+INFO: 	Elaboration peak resident set memory usage = 84.384 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(8): INFO: compiling module 'EFX_ADD' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(21): INFO: compiling module 'EFX_FF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(38): INFO: compiling module 'EFX_COMB4' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(48): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(57): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(65): INFO: compiling module 'EFX_MULT' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(100): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(156): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(209): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(322): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(394): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(499): INFO: compiling module 'RAMB5' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(561): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(653): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(754): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+INFO: Reading Mapping Library took 0.0045845 seconds.
+INFO: 	Reading Mapping Library took 0 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 200.388 MB, end = 200.388 MB, delta = 0 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 85.292 MB, end = 85.292 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 85.292 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:719)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:89)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'led_reg'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v:18)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo_config.a_rst_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v:67)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo_data.a_rst_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v:77)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'wsctrl.reset'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v:99)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85292KB)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85292KB)
+[EFX-0000 INFO] ... Mapping design "WS2812_TOP"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "test_uart_rx" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "test_uart_rx" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85292KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_32d04aeed835495e81d0eaddcc997863(OUTPUT_REG=0,RAM_MUX_RATIO=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_32d04aeed835495e81d0eaddcc997863(OUTPUT_REG=0,RAM_MUX_RATIO=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_32d04aeed835495e81d0eaddcc997863(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_32d04aeed835495e81d0eaddcc997863(WIDTH=10)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_32d04aeed835495e81d0eaddcc997863(STAGE=2,WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_32d04aeed835495e81d0eaddcc997863(STAGE=2,WIDTH=10)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=2)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=3)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=3)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=4)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=6)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=6)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=7)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=7)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=8)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=9)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=10)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_32d04aeed835495e81d0eaddcc997863(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_32d04aeed835495e81d0eaddcc997863(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_32d04aeed835495e81d0eaddcc997863_renamed_due_excessive_length_1" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_32d04aeed835495e81d0eaddcc997863_renamed_due_excessive_length_1" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "phy_FIFO" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "phy_FIFO" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" begin
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v:18)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_config_ctrl" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_config_ctrl" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_data_ctrl" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_data_ctrl" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_Interface" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_Interface" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 86988KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_TOP" begin
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 257 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_TOP" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88516KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88516KB)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88516KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88516KB)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88516KB)
+[EFX-0000 INFO] ... Sequential Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 565 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization deduced 694 equivalent points.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 4s CPU user time : 5s CPU sys time : 0s MEM : 108584KB)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 108584KB)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 760, ed: 2405, lv: 7, pw: 1474.87
+[EFX-0000 INFO] ... LUT mapping end (Real time : 2s CPU user time : 7s CPU sys time : 0s MEM : 130184KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 7s CPU sys time : 0s MEM : 130184KB)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 525 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 0 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 3s CPU user time : 10s CPU sys time : 0s MEM : 130184KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 10s CPU sys time : 0s MEM : 130184KB)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port i_rx_serial_data is unconnected and will be removed
+INFO: Found 1 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 0.00451283 seconds.
+INFO: 	VDB Netlist Checker took 0.01 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 222.052 MB, end = 222.052 MB, delta = 0 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 115.912 MB, end = 115.912 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 130.184 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'WS2812_TOP' to Verilog file 'outflow/WS2812_Custom.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	65
+[EFX-0000 INFO] EFX_LUT4        : 	392
+[EFX-0000 INFO] EFX_FF          : 	295
+[EFX-0000 INFO] EFX_RAM_5K      : 	1
+[EFX-0000 INFO] EFX_GBUFCE      : 	1
+[EFX-0000 INFO] =============================== 
+Running: efx_run_dbg.py WS2812_Custom --family Trion --device T120F324 --debug_profile debug_profile.wizard.json --output_dir outflow --top_module WS2812_TOP --map_opts veri_options=verilog_mode=verilog_2k,vhdl_mode=vhdl_2008 I=ip/phy_FIFO
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2023.2.307
+[EFX-0000 INFO] Compiled: Dec 15 2023.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(8): INFO: compiling module 'EFX_IBUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(16): INFO: compiling module 'EFX_OBUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(23): INFO: compiling module 'EFX_IO_BUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(33): INFO: compiling module 'EFX_CLKOUT' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(41): INFO: compiling module 'EFX_IREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(51): INFO: compiling module 'EFX_OREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(60): INFO: compiling module 'EFX_IOREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(75): INFO: compiling module 'EFX_IDDIO' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(87): INFO: compiling module 'EFX_ODDIO' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(99): INFO: compiling module 'EFX_GPIO_V1' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(118): INFO: compiling module 'EFX_PLL_V1' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(136): INFO: compiling module 'EFX_OSC_V1' (VERI-1018)
+INFO: ***** Beginning Analysis ... *****
+INFO: default VHDL library search path is now "/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+-- Analyzing Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v' (VERI-1482)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(4507): INFO: undeclared symbol 'la_capture_mask', assumed default net type 'wire' (VERI-2561)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(4865): INFO: undeclared symbol 'next_segment_pointer_eq', assumed default net type 'wire' (VERI-2561)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(4866): INFO: undeclared symbol 'next_segment_msb_xor', assumed default net type 'wire' (VERI-2561)
+INFO: Analysis took 0.0212469 seconds.
+INFO: 	Analysis took 0.02 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 191.816 MB, end = 194.6 MB, delta = 2.784 MB
+INFO: Analysis resident set memory usage: begin = 74.676 MB, end = 78.372 MB, delta = 3.696 MB
+INFO: 	Analysis peak resident set memory usage = 78.372 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(224): WARNING: port 'probe31' remains unconnected for this instance (VERI-1927)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(10): INFO: compiling module 'edb_top' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(597): INFO: compiling module 'edb_la_top_renamed_due_excessive_length_1' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(298): INFO: compiling module 'edb_adbg_crc32' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5588): INFO: compiling module 'compare_unit(WIDTH=11'b0100,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5588): INFO: compiling module 'compare_unit(WIDTH=11'b010000,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5588): INFO: compiling module 'compare_unit(WIDTH=11'b01000,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5588): INFO: compiling module 'compare_unit(WIDTH=11'b01,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5588): INFO: compiling module 'compare_unit(WIDTH=11'b01011,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5588): INFO: compiling module 'compare_unit(WIDTH=11'b0100000,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5588): INFO: compiling module 'compare_unit(WIDTH=11'b011000,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5588): INFO: compiling module 'compare_unit(WIDTH=11'b0101,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5793): INFO: compiling module 'trigger_unit(WIDTH=32'b011111,PIPE=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(5793): INFO: compiling module 'trigger_unit(WIDTH=32'b011111,PIPE=1,TRIGGER_IF_MASK_ZERO=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(4499): WARNING: actual bit length 32 differs from formal bit length 1 for port 'trigger_in' (VERI-1330)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(4942): INFO: compiling module 'la_biu(CAPTURE_WIDTH=32'b0101010111,CAPTURE_CONTROL=1)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(4684): INFO: compiling module 'fifo_with_read(DATA_WIDTH=32'b0101011000)' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(4634): INFO: compiling module 'fifo_address_trancode_unit' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(507): INFO: compiling module 'edb_simple_dual_port_ram(DATA_WIDTH=32'b0101011000,ADDR_WIDTH=10,RAM_INIT_FILE="")' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(522): INFO: extracting RAM for identifier 'ram' (VERI-2571)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(376): INFO: compiling module 'debug_hub' (VERI-1018)
+/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v(173): WARNING: input port 'probe31[0]' remains unconnected for this instance (VDB-1053)
+INFO: Elaboration took 0.499809 seconds.
+INFO: 	Elaboration took 0.48 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 194.6 MB, end = 260.86 MB, delta = 66.26 MB
+INFO: Elaboration resident set memory usage: begin = 78.372 MB, end = 145.096 MB, delta = 66.724 MB
+INFO: 	Elaboration peak resident set memory usage = 145.096 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(8): INFO: compiling module 'EFX_ADD' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(21): INFO: compiling module 'EFX_FF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(38): INFO: compiling module 'EFX_COMB4' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(48): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(57): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(65): INFO: compiling module 'EFX_MULT' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(100): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(156): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(209): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(322): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(394): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(499): INFO: compiling module 'RAMB5' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(561): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(653): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(754): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+INFO: Reading Mapping Library took 0.0064442 seconds.
+INFO: 	Reading Mapping Library took 0.01 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 260.86 MB, end = 260.86 MB, delta = 0 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 145.096 MB, end = 145.096 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 145.096 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0200 WARNING] Removing redundant signal : compared_in[0]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:5594)
+[EFX-0200 WARNING] Removing redundant signal : mask_in[0]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:5595)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:5805)
+[EFX-0200 WARNING] Removing redundant signal : trigger_in. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:5805)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:522)
+[EFX-0200 WARNING] Removing redundant signal : din[343]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:4697)
+[EFX-0200 WARNING] Removing redundant signal : trig_out. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:4976)
+[EFX-0200 WARNING] Removing redundant signal : trig_out_ack. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:4977)
+[EFX-0266 WARNING] Module Instance 'genblk2.global_capture_inst' input pin tied to constant (trigger_in=0).
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:1130)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:1132)
+[EFX-0200 WARNING] Removing redundant signal : bscan_SEL. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:1133)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:1137)
+[EFX-0200 WARNING] Removing redundant signal : trig_in_ack. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:1148)
+[EFX-0200 WARNING] Removing redundant signal : bscan_CAPTURE. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:381)
+[EFX-0200 WARNING] Removing redundant signal : bscan_DRCK. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:382)
+[EFX-0200 WARNING] Removing redundant signal : bscan_RUNTEST. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:384)
+[EFX-0200 WARNING] Removing redundant signal : bscan_TMS. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:389)
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe31[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe32[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe33[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe34[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe35[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe36[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe37[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe38[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe39[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'la0.probe40[0]'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v:173)
+[EFX-0201 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 145096KB)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 145096KB)
+[EFX-0000 INFO] ... Mapping design "edb_top"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_adbg_crc32" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_adbg_crc32" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010000,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010000,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01000,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01000,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01011,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01011,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100000,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100000,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011000,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011000,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0101,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0101,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(WIDTH=32'b011111,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(WIDTH=32'b011111,PIPE=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(WIDTH=32'b011111,PIPE=1,TRIGGER_IF_MASK_ZERO=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(WIDTH=32'b011111,PIPE=1,TRIGGER_IF_MASK_ZERO=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_address_trancode_unit" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_address_trancode_unit" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 146492KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_simple_dual_port_ram(DATA_WIDTH=32'b0101011000,ADDR_WIDTH=10,RAM_INIT_FILE="")" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_simple_dual_port_ram(DATA_WIDTH=32'b0101011000,ADDR_WIDTH=10,RAM_INIT_FILE="")" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 155180KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=32'b0101011000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=32'b0101011000)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 155180KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=32'b0101010111,CAPTURE_CONTROL=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=32'b0101010111,CAPTURE_CONTROL=1)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 155180KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_la_top_renamed_due_excessive_length_1" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_la_top_renamed_due_excessive_length_1" end (Real time : 1s CPU user time : 3s CPU sys time : 0s MEM : 155180KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debug_hub" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debug_hub" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 155180KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" begin
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 130 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" end (Real time : 1s CPU user time : 4s CPU sys time : 0s MEM : 192660KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 192660KB)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 1s CPU user time : 4s CPU sys time : 0s MEM : 192660KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 192660KB)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 192660KB)
+[EFX-0000 INFO] ... Sequential Optimization begin
+[EFX-0000 INFO] ... Clock Network 'la0_clk' with 3420 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Clock Network 'bscan_TCK' with 2135 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization deduced 210 equivalent points.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 20s CPU user time : 24s CPU sys time : 0s MEM : 238668KB)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 24s CPU sys time : 0s MEM : 238668KB)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 4591, ed: 14124, lv: 7, pw: 9228.72
+[EFX-0000 INFO] ... LUT mapping end (Real time : 7s CPU user time : 31s CPU sys time : 0s MEM : 238668KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 31s CPU sys time : 0s MEM : 238668KB)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+[EFX-0000 INFO] ... Clock Network 'la0_clk' with 3420 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Clock Network 'bscan_TCK' with 2135 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 0 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 19s CPU user time : 50s CPU sys time : 0s MEM : 285288KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 50s CPU sys time : 0s MEM : 285288KB)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port bscan_DRCK is unconnected and will be removed
+WARNING: Input/Inout Port bscan_RUNTEST is unconnected and will be removed
+WARNING: Input/Inout Port bscan_TMS is unconnected and will be removed
+INFO: Found 3 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 0.0673104 seconds.
+INFO: 	VDB Netlist Checker took 0.06 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 361.088 MB, end = 361.088 MB, delta = 0 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 255.884 MB, end = 255.884 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 285.288 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	89
+[EFX-0000 INFO] EFX_LUT4        : 	4577
+[EFX-0000 INFO] EFX_FF          : 	5535
+[EFX-0000 INFO] EFX_RAM_5K      : 	69
+[EFX-0000 INFO] EFX_GBUFCE      : 	2
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2023.2.307
+[EFX-0000 INFO] Compiled: Dec 15 2023.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(8): INFO: compiling module 'EFX_IBUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(16): INFO: compiling module 'EFX_OBUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(23): INFO: compiling module 'EFX_IO_BUF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(33): INFO: compiling module 'EFX_CLKOUT' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(41): INFO: compiling module 'EFX_IREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(51): INFO: compiling module 'EFX_OREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(60): INFO: compiling module 'EFX_IOREG' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(75): INFO: compiling module 'EFX_IDDIO' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(87): INFO: compiling module 'EFX_ODDIO' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(99): INFO: compiling module 'EFX_GPIO_V1' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(118): INFO: compiling module 'EFX_PLL_V1' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(136): INFO: compiling module 'EFX_OSC_V1' (VERI-1018)
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file '/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(8): INFO: compiling module 'EFX_ADD' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(21): INFO: compiling module 'EFX_FF' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(38): INFO: compiling module 'EFX_COMB4' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(48): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(57): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(65): INFO: compiling module 'EFX_MULT' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(100): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(156): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(209): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(322): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(394): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(499): INFO: compiling module 'RAMB5' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(561): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(653): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(754): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+/home/efx/hdd/shreeyash/efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+INFO: Reading Mapping Library took 0.00450188 seconds.
+INFO: 	Reading Mapping Library took 0.01 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 219.932 MB, end = 220.536 MB, delta = 0.604 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 103.46 MB, end = 105.22 MB, delta = 1.76 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 105.22 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:719)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:312)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[29]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[28]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[27]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[26]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[25]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[24]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[23]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[22]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[21]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[20]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[19]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[18]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[17]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[16]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[15]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[14]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[13]. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:313)
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:89)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO/phy_FIFO.v:89)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'led_reg'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v:18)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo_config.a_rst_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v:67)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'ws_wr_fifo_data.a_rst_i'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v:77)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'wsctrl.reset'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_TOP.v:99)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 109388KB)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 109388KB)
+[EFX-0000 INFO] ... Mapping design "WS2812_TOP"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "test_uart_rx" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "test_uart_rx" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_32d04aeed835495e81d0eaddcc997863(OUTPUT_REG=0,RAM_MUX_RATIO=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_32d04aeed835495e81d0eaddcc997863(OUTPUT_REG=0,RAM_MUX_RATIO=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_32d04aeed835495e81d0eaddcc997863(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_32d04aeed835495e81d0eaddcc997863(WIDTH=10)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_32d04aeed835495e81d0eaddcc997863(STAGE=2,WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_32d04aeed835495e81d0eaddcc997863(STAGE=2,WIDTH=10)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=2)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=3)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=3)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=4)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=6)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=6)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=7)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=7)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=8)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=9)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_32d04aeed835495e81d0eaddcc997863(WIDTH=10)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_32d04aeed835495e81d0eaddcc997863(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_32d04aeed835495e81d0eaddcc997863(SYNC_CLK=0,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_32d04aeed835495e81d0eaddcc997863_renamed_due_excessive_length_1" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_32d04aeed835495e81d0eaddcc997863_renamed_due_excessive_length_1" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "phy_FIFO" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "phy_FIFO" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" begin
+[EFX-0656 WARNING] Optimizing into logic zero initialized read-only memory block 'led_reg'. (/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_bram.v:18)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_config_ctrl" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_config_ctrl" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 110040KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_data_ctrl" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ws2812_data_ctrl" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 110868KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_Interface" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_Interface" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 111132KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 111132KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_TOP" begin
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 257 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "WS2812_TOP" end (Real time : 1s CPU user time : 3s CPU sys time : 0s MEM : 133832KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 133832KB)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 133832KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 133832KB)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 133832KB)
+[EFX-0000 INFO] ... Sequential Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 3940 loads will be considered for sequential optimization.
+## idx 40372 already mapped to net edb_top_inst/n12256 (for net edb_top_inst/n12257)
+## idx 2774 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[7] (for net edb_top_inst/n12239)
+## idx 2768 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12242)
+## idx 2780 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[10] (for net edb_top_inst/n12278)
+## idx 41554 already mapped to net edb_top_inst/n12302 (for net edb_top_inst/n12303)
+## idx 485 already mapped to net edb_top_inst/n12338 (for net edb_top_inst/n12339)
+## idx 60456 already mapped to net edb_top_inst/n12827 (for net edb_top_inst/n12831)
+## idx 3634 already mapped to net edb_top_inst/la0/GEN_PROBE[26].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12805)
+## idx 45966 already mapped to net edb_top_inst/n12256 (for net edb_top_inst/n12257)
+## idx 46051 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[7] (for net edb_top_inst/n12239)
+## idx 46061 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12242)
+## idx 46147 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[10] (for net edb_top_inst/n12278)
+## idx 46886 already mapped to net edb_top_inst/n12302 (for net edb_top_inst/n12303)
+## idx 46810 already mapped to net edb_top_inst/n12338 (for net edb_top_inst/n12339)
+## idx 59390 already mapped to net edb_top_inst/n12827 (for net edb_top_inst/n12831)
+## idx 59407 already mapped to net edb_top_inst/la0/GEN_PROBE[26].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12805)
+[EFX-0000 INFO] ... Clock Network 'jtag_inst1_TCK' with 2128 loads will be considered for sequential optimization.
+## idx 45967 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[7] (for net edb_top_inst/n12239)
+## idx 45977 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12242)
+## idx 46081 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[10] (for net edb_top_inst/n12278)
+## idx 46744 already mapped to net edb_top_inst/n12338 (for net edb_top_inst/n12339)
+## idx 59337 already mapped to net edb_top_inst/la0/GEN_PROBE[26].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12805)
+[EFX-0000 INFO] ... Sequential Optimization deduced 1152 equivalent points.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 19s CPU user time : 22s CPU sys time : 0s MEM : 226316KB)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 22s CPU sys time : 0s MEM : 226316KB)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 740, ed: 2361, lv: 7, pw: 11335.03
+[EFX-0000 INFO] ... LUT mapping end (Real time : 2s CPU user time : 24s CPU sys time : 0s MEM : 226316KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 24s CPU sys time : 0s MEM : 226316KB)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+## idx 2768 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[7] (for net edb_top_inst/n12239)
+## idx 2762 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12242)
+## idx 2774 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[10] (for net edb_top_inst/n12278)
+## idx 479 already mapped to net edb_top_inst/n12338 (for net edb_top_inst/n12339)
+## idx 3628 already mapped to net edb_top_inst/la0/GEN_PROBE[26].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12805)
+[EFX-0000 INFO] ... Clock Network 'clk' with 3174 loads will be considered for retiming optimization.
+## idx 2768 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[7] (for net edb_top_inst/n12239)
+## idx 2762 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12242)
+## idx 2774 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[10] (for net edb_top_inst/n12278)
+## idx 479 already mapped to net edb_top_inst/n12338 (for net edb_top_inst/n12339)
+## idx 3628 already mapped to net edb_top_inst/la0/GEN_PROBE[26].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12805)
+## idx 43723 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[7] (for net edb_top_inst/n12239)
+## idx 43733 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12242)
+## idx 43837 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[10] (for net edb_top_inst/n12278)
+## idx 44494 already mapped to net edb_top_inst/n12338 (for net edb_top_inst/n12339)
+## idx 57087 already mapped to net edb_top_inst/la0/GEN_PROBE[26].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12805)
+[EFX-0000 INFO] ... Clock Network 'jtag_inst1_TCK' with 2128 loads will be considered for retiming optimization.
+## idx 43723 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[7] (for net edb_top_inst/n12239)
+## idx 43733 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12242)
+## idx 43837 already mapped to net edb_top_inst/la0/GEN_PROBE[16].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[10] (for net edb_top_inst/n12278)
+## idx 44494 already mapped to net edb_top_inst/n12338 (for net edb_top_inst/n12339)
+## idx 57087 already mapped to net edb_top_inst/la0/GEN_PROBE[26].genblk7.GEN_REGS[4].genblk1.internal_reg_pr[4] (for net edb_top_inst/n12805)
+[EFX-0000 INFO] ... Performed 0 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 18s CPU user time : 42s CPU sys time : 0s MEM : 263280KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 42s CPU sys time : 0s MEM : 263280KB)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port jtag_inst1_DRCK is unconnected and will be removed
+WARNING: Input/Inout Port jtag_inst1_RUNTEST is unconnected and will be removed
+WARNING: Input/Inout Port jtag_inst1_TMS is unconnected and will be removed
+INFO: Found 3 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 0.0697798 seconds.
+INFO: 	VDB Netlist Checker took 0.07 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 368.908 MB, end = 368.908 MB, delta = 0 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 263.28 MB, end = 263.28 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 263.28 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'WS2812_TOP' to Verilog file '/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/WS2812_Custom.dbg.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	183
+[EFX-0000 INFO] EFX_LUT4        : 	5104
+[EFX-0000 INFO] EFX_FF          : 	5253
+[EFX-0000 INFO] EFX_RAM_5K      : 	70
+[EFX-0000 INFO] EFX_GBUFCE      : 	2
+[EFX-0000 INFO] =============================== 
+[WARNING ] Save db version: 20232999
+
+== Load a design from file /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.peri.xml
+INFO: Load design...
+INFO: Periphery design is in sync with Efinity project
+INFO: Load design...done.
+
+== Create JTAG with default setting and pin name
+
+== Assign JTAG_USER1 resource to new jtag
+INFO: Check design...
+INFO: Check design...done.
+
+== Save Design to file: /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.dbg.peri.xml
+INFO: Save as design...
+INFO: Save as design...done.
+Compile Debugger Core: /home/efx/hdd/shreeyash/efinity/2023.2/bin/efx_map --family Trion --device T120F324 --root edb_top --v /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.v --write-postmap-module /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.post.vdb --generate_sig_profile false --work-dir /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg --output-dir outflow --veri_options=verilog_mode=verilog_2k,vhdl_mode=vhdl_2008 --I=ip/phy_FIFO --I /home/efx/hdd/efinity_company_projects/c4ff9f63ee
+Merge VDB: /home/efx/hdd/shreeyash/efinity/2023.2/bin/efx_map --root WS2812_TOP --family Trion --device T120F324 --vdb /home/efx/hdd/efinity_company_projects/c4ff9f63ee/outflow/WS2812_Custom.elab.vdb --vdb /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/debug_top.post.vdb --write-efx-verilog /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/WS2812_Custom.dbg.map.v --binary-db /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg/WS2812_Custom.dbg.vdb --merge_vdbs=1 --conn /home/efx/hdd/efinity_company_projects/c4ff9f63ee/debug_profile.wizard.json --generate_sig_profile false --work-dir /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_dbg --output-dir outflow --veri_options=verilog_mode=verilog_2k,vhdl_mode=vhdl_2008 --I=ip/phy_FIFO --I /home/efx/hdd/efinity_company_projects/c4ff9f63ee
+Insert JTAG: python3 /home/efx/hdd/shreeyash/efinity/2023.2/scripts/efx_pt_jtag_util.py --device T120F324 --project WS2812_Custom --design_file /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.peri.xml --action add --jtag_user JTAG_USER1 --output /home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.dbg.peri.xml
+Running: efx_run_pt.py WS2812_Custom.dbg Trion T120F324
+Running: /home/efx/hdd/shreeyash/efinity/2023.2/bin/python3 /home/efx/hdd/shreeyash/efinity/2023.2/scripts/efx_run_pt.py WS2812_Custom.dbg Trion T120F324
+Writing out summary report file
+Writing out pinout file
+Writing out interface config file
+Writing out timing related file
+Writing out verilog template file
+Writing out option register file
+Writing out boundary scan description file
+Writing out LPF
+Remove the auto-generated interface file. (file:/home/efx/hdd/efinity_company_projects/c4ff9f63ee/WS2812_Custom.dbg.peri.xml)
+Running: efx_run_pnr.py WS2812_Custom --prj --family Trion --device T120F324 --timing_model C4 --sim --dir /home/efx/hdd/efinity_company_projects/c4ff9f63ee/ip/phy_FIFO --output_dir outflow --opt work_dir=work_pnr seed=1 placer_effort_level=2 max_threads=-1 print_critical_path=10 --enable_dbg
+Creating /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_pnr
+Running: /home/efx/hdd/shreeyash/efinity/2023.2/bin/efx_pnr --circuit WS2812_Custom --family Trion --device T120F324 --operating_conditions C4 --vdb_file outflow/WS2812_Custom.dbg.vdb --use_vdb_file on --output_dir outflow --place_file outflow/WS2812_Custom.place --route_file outflow/WS2812_Custom.route --sync_file outflow/WS2812_Custom.interface.csv --generate_prevpr_netlist on --work_dir=work_pnr --seed=1 --placer_effort_level=2 --max_threads=-1 --print_critical_path=10
+INFO: --max_threads set to 16 
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Compiled: Dec 15 2023.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T120F324" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "outflow/WS2812_Custom.dbg.vdb".
+***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port jtag_inst1_DRCK is unconnected and will be removed
+WARNING: Input/Inout Port jtag_inst1_RUNTEST is unconnected and will be removed
+WARNING: Input/Inout Port jtag_inst1_TMS is unconnected and will be removed
+INFO: Found 3 warnings in the post-synthesis netlist.
+VDB Netlist Checker took 0.0993828 seconds.
+	VDB Netlist Checker took 0.1 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 204.712 MB, end = 204.712 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 67.664 MB, end = 67.664 MB, delta = 0 MB
+	VDB Netlist Checker peak resident set memory usage = 148.16 MB
+***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'WS2812_TOP' to Verilog file 'outflow/WS2812_Custom.prevpr.v' (VDB-1030)
+Reading core interface constraints from 'outflow/WS2812_Custom.interface.csv'.
+Successfully processed interface constraints file "outflow/WS2812_Custom.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #6(jtag_inst1_DRCK) has no fanout.
+Removing input.
+logical_block #8(jtag_inst1_RUNTEST) has no fanout.
+Removing input.
+logical_block #13(jtag_inst1_TMS) has no fanout.
+Removing input.
+Pass 0: Swept away 3 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 3 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 3 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "outflow/WS2812_Custom.dbg.vdb".
+Netlist pre-processing took 0.652982 seconds.
+	Netlist pre-processing took 0.52 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 200.164 MB, end = 282.152 MB, delta = 81.988 MB
+Netlist pre-processing resident set memory usage: begin = 62.352 MB, end = 145.632 MB, delta = 83.28 MB
+	Netlist pre-processing peak resident set memory usage = 514.296 MB
+***** Ending stage netlist pre-processing *****
+
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+Generate proto netlist for file "work_pnr/WS2812_Custom.net_proto" took 0.003844 seconds
+Creating IO constraints file 'work_pnr/WS2812_Custom.io_place'
+Packing took 0.0255397 seconds.
+	Packing took 0.03 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 253.352 MB, end = 253.352 MB, delta = 0 MB
+Packing resident set memory usage: begin = 117.228 MB, end = 117.228 MB, delta = 0 MB
+	Packing peak resident set memory usage = 514.296 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file work_pnr/WS2812_Custom.net_proto
+Read proto netlist for file "work_pnr/WS2812_Custom.net_proto" took 0.001174 seconds
+Setup net and block data structure took 0.185526 seconds
+Packed netlist loading took 2.66628 seconds.
+	Packed netlist loading took 3.7 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 253.352 MB, end = 1413.73 MB, delta = 1160.38 MB
+Packed netlist loading resident set memory usage: begin = 117.228 MB, end = 222.436 MB, delta = 105.208 MB
+	Packed netlist loading peak resident set memory usage = 514.296 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+
+No SDC file found.  Using default timing constraint of 1 ns.
+NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'outflow/WS2812_Custom.interface.csv'.
+Successfully processed interface constraints file "outflow/WS2812_Custom.interface.csv".
+Writing IO placement constraints to 'outflow/WS2812_Custom.interface.io'.
+
+Reading placement constraints from 'outflow/WS2812_Custom.interface.io'.
+
+Reading placement constraints from 'work_pnr/WS2812_Custom.io_place'.
+WARNING(1): Clock driver clk should use the dedicated clock pad.
+WARNING(2): Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+The driver, jtag_inst1_RESET, of control net, jtag_inst1_RESET, should be placed at a dedicated control pad location.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Found 44 synchronizers as follows: 
+	Synchronizer 0:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF
+	Synchronizer 1:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF
+	Synchronizer 2:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF
+	Synchronizer 3:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF
+	Synchronizer 4:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF
+	Synchronizer 5:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF
+	Synchronizer 6:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF
+	Synchronizer 7:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF
+	Synchronizer 8:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF
+	Synchronizer 9:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[2]~FF
+	Synchronizer 10:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF
+	Synchronizer 11:  ws_wr_fifo_config/u_efx_fifo_top/genblk2.rd_rst[0]~FF ws_wr_fifo_config/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 12:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF
+	Synchronizer 13:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF
+	Synchronizer 14:  ws_wr_fifo_config/u_efx_fifo_top/genblk2.wr_rst[0]~FF ws_wr_fifo_config/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 15:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[7]~FF
+	Synchronizer 16:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF
+	Synchronizer 17:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF
+	Synchronizer 18:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[0]~FF
+	Synchronizer 19:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF
+	Synchronizer 20:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[1]~FF
+	Synchronizer 21:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[8]~FF
+	Synchronizer 22:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF
+	Synchronizer 23:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[9]~FF
+	Synchronizer 24:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF
+	Synchronizer 25:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[7]~FF
+	Synchronizer 26:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[8]~FF
+	Synchronizer 27:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[9]~FF
+	Synchronizer 28:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF
+	Synchronizer 29:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[7]~FF
+	Synchronizer 30:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[8]~FF
+	Synchronizer 31:  ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo_config/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[9]~FF
+	Synchronizer 32:  ws_wr_fifo_data/u_efx_fifo_top/genblk2.rd_rst[0]~FF ws_wr_fifo_data/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 33:  ws_wr_fifo_data/u_efx_fifo_top/genblk2.wr_rst[0]~FF ws_wr_fifo_data/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 34:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][0]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[0]~FF
+	Synchronizer 35:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][1]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[1]~FF
+	Synchronizer 36:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][2]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[2]~FF
+	Synchronizer 37:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF
+	Synchronizer 38:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF
+	Synchronizer 39:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF
+	Synchronizer 40:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF
+	Synchronizer 41:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][7]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[7]~FF
+	Synchronizer 42:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][8]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[8]~FF
+	Synchronizer 43:  ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][9]~FF ws_wr_fifo_data/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[9]~FF
+Create outflow/WS2812_Custom_after_qp.qdelay
+QPLACER STATIC DB USAGE DISABLED
+Starting Global Placer with 16 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1    17509952           -5213         0.6%
+          2    15181143           -5213         1.1%
+          3    13941301           -5213         1.5%
+          4    10768152           -5550         2.0%
+          5     4751095           -5979         3.2%
+          6     2101499           -6453         7.8%
+          7     1049393           -7877        16.3%
+          8      535804           -8849        29.9%
+          9      517278           -9567        45.7%
+         10      477438           -9621        49.1%
+         11      467938           -9696        56.3%
+         12      465100           -8885        56.5%
+         13      480519           -9124        57.7%
+         14      405906           -9207        57.7%
+         15      421886           -9077        63.1%
+         16      429874           -9235        63.1%
+         17      410761           -9329        63.1%
+         18      407699           -9341        67.7%
+         19      403385           -9337        67.7%
+         20      402090           -9117        71.3%
+         21      388063           -9297        71.3%
+         22      392316           -8969        75.1%
+         23      381548           -8987        75.1%
+         24      383959           -9097        77.4%
+         25      390752           -8795        77.5%
+         26      396545           -8748        77.9%
+         27      369856           -8698        77.9%
+         28      386311           -8399        82.4%
+         29      364223           -9193        82.4%
+         30      385013           -8984        84.2%
+         31      357829           -8980        84.2%
+         32      377542           -8723        86.2%
+         33      355534           -8754        86.2%
+         34      377412           -9013        87.6%
+         35      368544           -9390        87.6%
+         36      371494           -9061        87.6%
+         37      358918           -9293        87.6%
+         38      371301           -9012        89.9%
+         39      361974           -9077        89.9%
+         40      368946           -9045        89.9%
+         41      359933           -9187        89.9%
+         42      370736           -9258        90.7%
+         43      357719           -9258        90.7%
+         44      368763           -9211        92.0%
+         45      358840           -9311        92.0%
+         46      359473           -9272        92.4%
+         47      359490           -9032        92.4%
+         48      360576           -9260        92.4%
+         49      352733           -9511        92.4%
+         50      360775           -9473        93.9%
+         51      356489           -9246        93.9%
+         52      359624           -9289        94.0%
+         53      355205           -9542        94.0%
+         54      359681           -8831        94.7%
+         55      353419           -9066        94.7%
+         56      359250           -9078        96.0%
+Starting Annealer
+InitializePins with 9861 cells
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0      359681           10899        30.0
+          1      351417            9353        29.2
+          2      310009            8789        28.1
+          3      283205            8274        26.7
+          4      270569            8220        25.2
+          5      261250            8245        23.7
+          6      256379            7878        22.3
+          7      253578            8113        20.8
+          8      250392            8051        19.5
+          9      246227            8051        18.2
+         10      242973            7878        16.9
+         11      241058            7548        15.7
+         12      239194            7548        14.6
+         13      235766            7548        13.5
+         14      234053            7548        12.5
+         15      232613            7992        11.6
+         16      231365            7992        10.7
+         17      230030            7992         9.9
+         18      228149            7819         9.2
+         19      225958            7608         8.5
+         20      225275            7608         7.8
+         21      224517            7608         7.2
+         22      223818            7608         6.7
+         23      222488            7608         6.2
+         24      220938            7608         5.7
+         25      219473            7608         5.3
+         26      217855            7297         4.9
+         27      216380            7297         4.5
+         28      215102            7297         4.2
+         29      213483            7297         3.9
+         30      211300            7297         3.6
+         31      209501            7297         3.2
+         32      207012            7297         2.9
+Generate outflow/WS2812_Custom_after_qp.qdelay
+Placement successful: 8516 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.319262 at 52,7
+Congestion-weighted HPWL per net: 18.5705
+
+Reading placement constraints from 'outflow/WS2812_Custom.qplace'.
+Finished Realigning Types (1472 blocks needed type change)
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file 'outflow/WS2812_Custom.place'
+Placement took 11.0051 seconds.
+	Placement took 27.83 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 1442.51 MB, end = 3284.56 MB, delta = 1842.05 MB
+Placement resident set memory usage: begin = 251.908 MB, end = 1481.65 MB, delta = 1229.74 MB
+	Placement peak resident set memory usage = 1481.74 MB
+***** Ending stage placement *****
+
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Compiled: Dec 15 2023.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T120F324" ...
+
+***** Beginning stage routing graph generation ... *****
+Read ipin pattern from /home/efx/hdd/shreeyash/efinity/2023.2/arch/./ipin_oph.xml
+Finished parsing ipin pattern file '/home/efx/hdd/shreeyash/efinity/2023.2/arch/./ipin_oph.xdb'.
+Finished parsing switch_block file '/home/efx/hdd/shreeyash/efinity/2023.2/arch/./sb_connectivity_subset.xdb'.
+BuildGraph process took 9.63989 seconds.
+	BuildGraph process took 9.42 seconds (approximately) in total CPU time.
+BuildGraph process virtual memory usage: begin = 3284.56 MB, end = 4312.77 MB, delta = 1028.22 MB
+BuildGraph process resident set memory usage: begin = 1481.65 MB, end = 2516.72 MB, delta = 1035.07 MB
+	BuildGraph process peak resident set memory usage = 2516.72 MB
+check rr_graph process took 0.668856 seconds.
+	check rr_graph process took 0.66 seconds (approximately) in total CPU time.
+check rr_graph process virtual memory usage: begin = 4468.74 MB, end = 4495.02 MB, delta = 26.272 MB
+check rr_graph process resident set memory usage: begin = 2672.75 MB, end = 2699.15 MB, delta = 26.4 MB
+	check rr_graph process peak resident set memory usage = 2699.15 MB
+Generated 6654726 RR nodes and 25236730 RR edges
+This design has 0 global control net(s). See outflow/WS2812_Custom.route.rpt for details.
+Routing graph took 10.6814 seconds.
+	Routing graph took 10.43 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 3284.56 MB, end = 4495.02 MB, delta = 1210.46 MB
+Routing graph resident set memory usage: begin = 1481.65 MB, end = 2699.15 MB, delta = 1217.5 MB
+	Routing graph peak resident set memory usage = 2699.15 MB
+***** Ending stage routing graph generation *****
+
+***** Beginning stage routing ... *****
+
+No SDC file found.  Using default timing constraint of 1 ns.
+NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+         1        28068              7.945               1.34
+         2         8304              9.006               1.28
+         3         4436              8.919               1.37
+         4         1851              7.883               1.59
+         5          742              7.883               1.27
+         6          261              7.883              0.749
+         7          114              7.917              0.509
+         8           54              7.917              0.398
+         9           17              7.917              0.399
+        10            6              7.917              0.378
+        11            1              8.191              0.374
+        12            0              8.161              0.344
+
+Successfully routed netlist after 12 routing iterations and 48548968 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+
+Serial number (magic cookie) for the routing is: 1913600378
+Netlist fully routed.
+
+Successfully created FPGA route file 'outflow/WS2812_Custom.route'
+Routing took 11.6291 seconds.
+	Routing took 13.83 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 4495.02 MB, end = 4871.87 MB, delta = 376.856 MB
+Routing resident set memory usage: begin = 2699.15 MB, end = 2715.6 MB, delta = 16.456 MB
+	Routing peak resident set memory usage = 3099.54 MB
+***** Ending stage routing *****
+
+***** Beginning stage final timing analysis ... *****
+
+No SDC file found.  Using default timing constraint of 1 ns.
+NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+
+
+Cross clock domain timing relationship was detected. Refer to the clocks section of the timing report for more details. You can use set_clock_groups to control how clocks are analyzed.
+Maximum possible analyzed clocks frequency
+  Clock Name   Period (ns)  Frequency (MHz)     Edge
+clk               7.213        138.639         (R-R)
+jtag_inst1_TCK    8.281        120.758         (R-R)
+
+Geomean max period: 7.729
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+ clk              clk                  1.000            -6.213           (R-R)
+ clk              jtag_inst1_TCK       1.000            -7.203           (R-R)
+ jtag_inst1_TCK   clk                  1.000            -1.239           (R-R)
+ jtag_inst1_TCK   jtag_inst1_TCK       1.000            -7.281           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+ clk              clk                  0.000             0.119           (R-R)
+ clk              jtag_inst1_TCK       0.000             2.697           (R-R)
+ jtag_inst1_TCK   clk                  0.000            -2.060           (R-R)
+ jtag_inst1_TCK   jtag_inst1_TCK       0.000             0.307           (R-R)
+
+WARNING(1): Clock domain between clk (rising) and clk (rising) may not meet (slack: -6.213 ns) the setup (max) timing requirement
+WARNING(2): Clock domain between clk (rising) and jtag_inst1_TCK (rising) may not meet (slack: -7.203 ns) the setup (max) timing requirement
+WARNING(3): Clock domain between jtag_inst1_TCK (rising) and clk (rising) may not meet (slack: -1.239 ns) the setup (max) timing requirement
+WARNING(4): Clock domain between jtag_inst1_TCK (rising) and jtag_inst1_TCK (rising) may not meet (slack: -7.281 ns) the setup (max) timing requirement
+
+WARNING(5): Clock domain between jtag_inst1_TCK (rising) and clk (rising) may not meet (slack: -2.060 ns) the hold (min) timing requirement
+
+Write Timing Report to "outflow/WS2812_Custom.timing.rpt" ...
+final timing analysis took 0.533677 seconds.
+	final timing analysis took 0.53 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 4871.87 MB, end = 4871.87 MB, delta = 0 MB
+final timing analysis resident set memory usage: begin = 2715.6 MB, end = 2715.67 MB, delta = 0.064 MB
+	final timing analysis peak resident set memory usage = 3099.54 MB
+***** Ending stage final timing analysis *****
+
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from 'outflow/WS2812_Custom.interface.csv'.
+Successfully processed interface constraints file "outflow/WS2812_Custom.interface.csv".
+Finished writing bitstream file work_pnr/WS2812_Custom.lbf.
+Bitstream generation took 2.05401 seconds.
+	Bitstream generation took 2.01 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 4871.87 MB, end = 4871.87 MB, delta = 0 MB
+Bitstream generation resident set memory usage: begin = 2715.67 MB, end = 2716.56 MB, delta = 0.888 MB
+	Bitstream generation peak resident set memory usage = 3099.54 MB
+***** Ending stage bitstream generation *****
+
+The entire flow of EFX_PNR took 43.5369 seconds.
+	The entire flow of EFX_PNR took 63.02 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 173.112 MB, end = 3936.05 MB, delta = 3762.94 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 29.728 MB, end = 1780.73 MB, delta = 1751 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 3099.54 MB
+Running: efx_run_pgm.py WS2812_Custom --family Trion --device T120F324 --output_dir outflow --opt mode=active width=1 enable_roms=smart spi_low_power_mode=on io_weak_pullup=on oscillator_clock_divider=DIV8 bitstream_compression=on enable_external_master_clock=off active_capture_clk_edge=posedge jtag_usercode=0xFFFFFFFF release_tri_then_reset=on
+/home/efx/hdd/shreeyash/efinity/2023.2/bin/efx_pgm --interface_designer_settings outflow/WS2812_Custom_or.ini --periph outflow/WS2812_Custom.lpf --family Trion --device T120F324 --source /home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_pnr/WS2812_Custom.lbf --dest outflow/WS2812_Custom.hex --mode=active --width=1 --enable_roms=smart --spi_low_power_mode=on --io_weak_pullup=on --oscillator_clock_divider=DIV8 --bitstream_compression=on --enable_external_master_clock=off --active_capture_clk_edge=posedge --jtag_usercode=0xFFFFFFFF --release_tri_then_reset=on
+
+Efinix FPGA Bitstream Generator.
+Version: 2023.2.307 
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+Compiled: Dec 15 2023.
+
+Using source file "/home/efx/hdd/efinity_company_projects/c4ff9f63ee/work_pnr/WS2812_Custom.lbf"
+Generating HEX programming file for device "T120F324", family "Trion"
+Using periphery source file "outflow/WS2812_Custom.lpf"
+Generating bit file: "outflow/WS2812_Custom.bit"
+HEX Generation Options Summary:
+	Listing options specified to bitstream generation:
+	spi_low_power_mode                       = on
+	oscillator_clock_divider                 = DIV8
+	io_weak_pullup                           = on
+	release_tri_then_reset                   = on
+Finished generating "outflow/WS2812_Custom.hex"
+Efinity Bitstream Generator took 4.22609 seconds.
+	Efinity Bitstream Generator took 4.03 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 57.208 MB, end = 196.212 MB, delta = 139.004 MB
+Efinity Bitstream Generator resident set memory usage: begin = 9.204 MB, end = 150.96 MB, delta = 141.756 MB
+	Efinity Bitstream Generator peak resident set memory usage = 203.504 MB

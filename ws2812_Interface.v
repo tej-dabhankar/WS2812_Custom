@@ -5,6 +5,7 @@ module WS2812_Interface(
     input     [15:0]      num_leds,
     input                 data_dv,
     input                 write_config,
+    input     [15:0]      data_delay,
  
     output    [15:0]      data_count,
     output                read_en,
@@ -26,18 +27,22 @@ module WS2812_Interface(
  reg [23:0] led_color = 0;
  reg [10:0] high_count = 0;
  reg [10:0] low_count = 0;
- reg [31:0] reset_count = 0;
+ reg [31:0] reset_count;
  reg [15:0] r_data_count = 0;
- reg [15:0] r_num_leds = 1000;
- reg [15:0] r_data_depth = 1000;
+ reg [15:0] r_num_leds = 10;
+ reg [15:0] r_data_depth =  10;
+ reg [15:0] r_data_delay = 15000;
 
 
 always @(posedge clk) begin
     if(write_config) begin
         r_num_leds <= num_leds;
-        r_data_depth <=data_depth;
-    end  else begin
-        r_num_leds <= 0;
+        r_data_depth <=num_leds;
+        r_data_delay <= data_delay;
+    end else begin
+        r_num_leds <= r_num_leds;
+        r_data_depth <=r_data_depth;
+        r_data_delay <= r_data_delay;
     end
 end
 
@@ -56,28 +61,29 @@ localparam DELAY    = 4'h7;
 
 always @(posedge clk) begin
     case (state)
-        IDLE: begin
+        IDLE: begin         //0
             led_counter <= 0;
-            reset_count <= 15000;
+            reset_count <= r_data_delay;
             state <= READ;
         end
 
-        READ: begin
+        READ: begin      //1
             r_read_en <= 1;
             state <= WAIT;
         end
         
-        WAIT : begin 
+        WAIT : begin //2
             if (data_dv) begin
                 led_color <= rgb_data_in;
                 rgb_counter <= 23;
+                r_read_en <=0;
                 state <= DECODE;
-            end else begin
+            end else begin 
                 state <= WAIT;
             end
         end
 
-        DECODE: begin
+        DECODE: begin//3
             if (led_color[rgb_counter]) begin
                 high_count <= 40;
                 low_count <= 20;
@@ -88,56 +94,63 @@ always @(posedge clk) begin
             state <= HIGH;
         end
 
-        HIGH: begin
+        HIGH: begin//4
             r_data <= 1;
             high_count <= high_count - 1;
 
             if (high_count == 0) begin
                 state <= LOW;
+            end else begin
+                state <= HIGH;
             end
         end
-
         LOW: begin
             r_data <= 0;
             low_count <= low_count - 1;
-
-            if (low_count == 0) begin
-                if (rgb_counter > 0) begin
-                    rgb_counter <= rgb_counter - 1;
+            
+            if(low_count == 0) begin
+                if(led_counter > 0) begin
+                    led_counter <= led_counter - 1;
                     state <= DECODE;
                 end else begin
-                    if (r_data_count < r_data_depth - 1) begin
+                    if(r_data_count < r_data_count-1) begin
                         r_data_count <= r_data_count + 1;
                     end else begin
                         r_data_count <= 0;
                     end
-
-                    if (led_counter < r_num_leds - 1) begin
+                    
+                    if(led_counter < num_leds-1) begin
                         led_counter <= led_counter + 1;
+                        r_rd_en    <= 1;
                         state <= READ;
                     end else begin
                         state <= RESET;
                     end
                 end
+            end else begin
+                state <= LOW;
             end
         end
-
+        
         RESET: begin
             r_data <= 0;
             reset_count <= reset_count - 1;
-
-            if (reset_count == 0) begin
-                reset_count <= 15000000;
+            
+            if(reset_count == 0) begin
                 state <= DELAY;
+            end else begin
+                state <= RESET;
             end
         end
-
+        
         DELAY: begin
-            r_data <= 0;
-            reset_count <= reset_count - 1;
-
-            if (reset_count == 0) begin
+            data <= 0;
+            delay_count <= delay_count - 1;
+            
+            if(delay_count == 0) begin
                 state <= IDLE;
+            end else begin
+                state <= DELAY;
             end
         end
     endcase
@@ -146,3 +159,5 @@ assign read_en =r_read_en;
 assign data_count = r_data_count;
 assign data = r_data;
 endmodule
+
+ 

@@ -1,6 +1,6 @@
 [dumpfile] "/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/la0_waveform.vcd"
-[dumpfile_mtime] "Mon Jun 17 12:26:19 2024"
-[dumpfile_size] 2232
+[dumpfile_mtime] "Fri Jun 21 05:07:54 2024"
+[dumpfile_size] 26185
 [savefile] "/home/tejas/Downloads/efinity/2023.2/project/WS2812_Custom/la0_waveform.gtkw"
 [timestart] 0
 [size] 1000 600
@@ -9,39 +9,53 @@
 [signals_width] 126
 [sst_expanded] 1
 @22
-top.\wsctrl/write
-top.\wsctrl/state[3:0]
+top.\wsctrl/data_depth[15:0]
+top.\wsctrl/num_leds[15:0]
 top.\wsctrl/r_write
-top.\wsctrl/r_num_leds[15:0]
+top.\wsctrl/write
+top.\WS2812_Interface/num_leds[15:0]
+top.\WS2812_Interface/r_data_depth[15:0]
+top.\WS2812_Interface/data_depth[15:0]
+top.\WS2812_Interface/r_num_leds[15:0]
+top.\data_ctrl/write
+top.\data_ctrl/write_config
+top.\data_ctrl/r_rgb_data[23:0]
+top.\data_ctrl/r_data_depth[15:0]
+top.\data_ctrl/r_write
+top.\data_ctrl/state[3:0]
+top.\WS2812_Interface/data
+top.\WS2812_Interface/data_dv
+top.\WS2812_Interface/rgb_data_in[23:0]
+top.\WS2812_Interface/r_data_count[15:0]
+top.\WS2812_Interface/data_count[15:0]
+top.\WS2812_Interface/rgb_counter[4:0]
+top.\WS2812_Interface/high_count[10:0]
+top.\WS2812_Interface/r_data
+top.\WS2812_Interface/r_read_en
+top.\WS2812_Interface/led_counter[15:0]
+top.\WS2812_Interface/read_en
+top.\WS2812_Interface/reset_count[31:0]
+top.\WS2812_Interface/state[3:0]
+top.\WS2812_Interface/write_config
+top.\WS2812_Interface/led_color[23:0]
+top.\WS2812_Interface/low_count[10:0]
+top.\wsctrl/data_delay_flag
 top.\wsctrl/r_fifo_read_en
+top.\wsctrl/post_wait_state[3:0]
+top.\wsctrl/data_length_flag
+top.\wsctrl/data_delay[15:0]
+top.\wsctrl/fifo_read_en
 top.\wsctrl/r_data_shift[15:0]
 top.\wsctrl/r_data_length[15:0]
-top.\wsctrl/r_data_depth[19:0]
-top.\wsctrl/r_data_delay[15:0]
-top.\wsctrl/r_data_config[7:0]
-top.\wsctrl/reset
-top.\wsctrl/post_wait_state[3:0]
-top.\wsctrl/num_leds_flag
-top.\wsctrl/num_leds[15:0]
-top.\wsctrl/f_empty
-top.\wsctrl/fifo_read_en
-top.\wsctrl/fifo_read_data[7:0]
-top.\wsctrl/data_shift_flag
-top.\wsctrl/data_length_flag
 top.\wsctrl/data_length[15:0]
-top.\wsctrl/data_depth[19:0]
-top.\wsctrl/data_delay_flag
-top.\wsctrl/data_delay[15:0]
-top.\wsctrl/clk
-top.w_rx_byte[7:0]
-top.w_rx_dv
-top.w_fifo_rd_data[7:0]
-top.data_delay[15:0]
-top.data_length[15:0]
-top.write
-top.num_leds[15:0]
-top.w_f_empty
-top.data_depth[19:0]
-top.i_rx_serial
-top.w_fifo_rd_en
-top.clk
+top.\wsctrl/fifo_read_data[7:0]
+top.\wsctrl/r_data_config[7:0]
+top.\wsctrl/state[3:0]
+top.\wsctrl/f_empty
+top.\wsctrl/r_num_leds[15:0]
+top.\wsctrl/reset
+top.\wsctrl/data_shift_change_flag
+top.\wsctrl/r_data_delay[15:0]
+top.\wsctrl/num_leds_flag
+top.\wsctrl/r_data_depth[15:0]
+top.\wsctrl/data_shift_flag

@@ -6,32 +6,33 @@ module ws2812_data_ctrl(
     input                           f_empty,
     input [PHY_FIFO_WIDTH-1:0]      fifo_read_data,
     output                          fifo_read_en,
-    input [15:0]                    data_depth,
+    input [15:0]                    num_leds,
     input                           write_config,
     /* WS2812 Signals */
 
     output                          write,
     output [23:0]                   rgb_data,
-    output [9:0]                   address
+    output [15:0]                   address
 );
 
 /* Global Parameters */
 parameter PHY_FIFO_WIDTH = 8;
 
 /* Register declaration and instantiations */
-reg [15:0]  r_data_depth = 1000;
-reg [15:0]  r_data_length = 1000;
+reg [15:0]  r_data_depth = 10;
+reg [15:0]  r_data_length = 10;
 reg [23:0]  r_rgb_data = 0;
 reg         r_write = 0;
 reg         r_fifo_read_en = 0;
-reg [19:0]  r_address = 0;
+reg [15:0]  r_address = 0;
 reg         r_rst;
 
 always @(posedge clk) begin
     if (write_config) begin
-        r_data_depth <=data_depth;       
+        r_data_depth <=num_leds;
+    end else begin   
+        r_data_depth <=r_data_depth;
     end
-
 end
 
 /* State Machine Parameters */
@@ -94,7 +95,7 @@ always @(posedge clk) begin
         WR_CONDITION: begin // 8
             r_write <= 0;
 
-            if(r_address < data_depth-1) begin
+            if(r_address < r_data_depth-1) begin
                 r_address <= r_address + 1;
             end else begin
                 r_address <= 0;

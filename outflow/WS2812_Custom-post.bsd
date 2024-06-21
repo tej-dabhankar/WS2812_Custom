@@ -67,7 +67,7 @@ port (
 	GPIOL_20_CDI5                 : linkage bit;
 	GPIOL_22_CDI6                 : linkage bit;
 	GPIOL_24_CDI7                 : linkage bit;
-	GPIOL_62_CTRL0                : linkage bit;
+	GPIOL_62_CTRL0                : out bit;
 	GPIOL_63_CTRL1                : linkage bit;
 	GPIOL_66_CLK0                 : in bit;
 	GPIOL_72_CLK6                 : linkage bit;
@@ -86,7 +86,7 @@ port (
 	GPIOR_178_CLK11               : linkage bit;
 	GPIOR_183_CTRL10              : linkage bit;
 	GPIOR_186_PLLIN0              : in bit;
-	GPIOR_187_PLLIN1              : linkage bit;
+	GPIOR_187_PLLIN1              : in bit;
 	GPIOR_188_PLLIN2              : linkage bit;
 
 	-- LVDS Pins
@@ -1169,7 +1169,7 @@ attribute BOUNDARY_REGISTER of T120F324 : entity is
 	"364 (BC_1, *, internal, 1)," &
 	"365 (BC_1, *, internal, X)," &
 
-	"366 (BC_1, *, internal, X)," &
+	"366 (BC_1, GPIOR_187_PLLIN1, input, X)," &
 	"367 (BC_1, *, internal, 1)," &
 	"368 (BC_1, *, internal, X)," &
 
@@ -2363,8 +2363,8 @@ attribute BOUNDARY_REGISTER of T120F324 : entity is
 	"1242 (BC_1, *, internal, X)," &
 
 	"1243 (BC_1, *, internal, X)," &
-	"1244 (BC_1, *, internal, 1)," &
-	"1245 (BC_1, *, internal, X)," &
+	"1244 (BC_1, *, control, 1)," &
+	"1245 (BC_1, GPIOL_62_CTRL0, output3, X, 1244, 1, Z)," &
 
 	"1246 (BC_1, *, internal, X)," &
 	"1247 (BC_1, *, internal, 1)," &
